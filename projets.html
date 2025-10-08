@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">E-Portfolio d'Yvan JACOB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="navbar">
+      <!-- Drapeaux pour changer la langue -->
+      <div class="lang-switcher-grid">
+        <img src="images/fr.png" alt="Français" class="flag" data-lang="fr">
+        <img src="images/en.png" alt="English" class="flag" data-lang="en">
+        <img src="images/es.png" alt="Español" class="flag" data-lang="es">
+        <img src="images/cn.png" alt="中文" class="flag" data-lang="cn">
+      </div>
+
+      <!-- Menu -->
+      <nav id="navMenu" class="nav-menu" aria-hidden="true">
+        <a href="index.html" data-i18n="menu_home"></a>
+        <a href="ingenieur.html" data-i18n="menu_ingenieur"></a>
+        <a href="activite.html" data-i18n="menu_activite"></a>
+        <a href="experiences.html" data-i18n="menu_exp"></a>
+        <a href="projets.html" data-i18n="menu_projet"></a> 
+        <a href="cv.html" data-i18n="menu_cv"></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TITRE DE PAGE -->
+  <div class="page-title">
+    <h1 data-i18n="menu_projet"></h1>
+  </div>
+
+  <!-- ======= SECTION PROJETS ======= -->
+  <section class="projets">
+
+    <!-- ======= TEXTE ARCHITECTURE NAVALE ======= -->
+    <div class="naval_architecture">
+      <p data-i18n="projet_texte"></p>
+      <p data-i18n="pourquoi_texte"></p>
+    </div>
+
+    <!-- ======= VIDEO + PERSONNES ======= -->
+    <h1 data-i18n="video_title"></h1>
+    <div class="interview-wrapper">
+      <!-- VIDEO A GAUCHE -->
+      <video class="presentation-video" controls>
+        <source src="images/presentation_cam.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+
+      <!-- BLOCS PERSONNES A DROITE -->
+      <div class="person-cards">
+        <div class="person-card">
+          <p><strong data-i18n="person1_name"></strong>, <span data-i18n="person1_age"></span> ans</p>
+          <p data-i18n="person1_job"></p>
+          <p data-i18n="person1_location"></p>
+        </div>
+        <div class="person-card">
+          <p><strong data-i18n="person2_name"></strong>, <span data-i18n="person2_age"></span> ans</p>
+          <p data-i18n="person2_job"></p>
+          <p data-i18n="person2_location"></p>
+        </div>
+        <div class="person-card">
+          <p><strong data-i18n="person3_name"></strong>, <span data-i18n="person3_age"></span> ans</p>
+          <p data-i18n="person3_job"></p>
+          <p data-i18n="person3_location"></p>
+        </div>
+      </div>
+    </div>
+
+    <p data-i18n="presentation_video"></p>
+
+  </section>
+
+  <!-- ======= CONTENU PRINCIPAL ======= -->
+  <main class="projects-container">
+    <p data-i18n="projet_domaine"></p>
+  </main>
+
+  <!-- ======= SECTION BATEAU ======= -->
+  <section id="bateau-section" class="bateau-section">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <img src="images/bateau.jpg" alt="Bateau" class="bateau" />
+  </section>
+
+<!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p>&copy; 2025 Yvan JACOB. Tous droits réservés.</p>
+      <div class="footer-links">
+        <div id="lockIcon" class="lock-icon" role="button" aria-label="Accès protégé">
+          <img id="lockImage" src="images/lock-closed.png" alt="Cadenas" width="30">
+        </div>
+        <a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
+        <a href="#" class="open-modal" data-modal="privacyModal">Politique de confidentialité</a>
+        <a href="#" class="open-modal" data-modal="contactModal">Contact</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="last-modified">
+        Dernière modification : <span id="lastModified"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= MODALES ======= -->
+
+  <!-- Mentions légales -->
+  <div id="mentionsModal" class="modal">
+    <div class="modal-content footer-modal">
+      <span class="close">&times;</span>
+      <h2>Mentions légales</h2>
+      <p>Conformément à la législation en vigueur, voici les informations légales du site :</p>
+      <ul>
+        <li>Propriétaire du site : Yvan JACOB</li>
+        <li>Adresse : <span class="sensitive" data-value="12 rue Jacqueline Auriol, Toulouse" data-mask="XX XXX XXXXXXXXX XXXXXX, Toulouse">XX XXX XXXXXXXXX XXXXXX, Toulouse</span></li>
+        <li>Email : <span class="sensitive" data-value="yvan.jcb@gmail.com" data-mask="xxxx@xxxx.xxx">xxxx@xxxx.xxx</span></li>
+        <li>Téléphone : <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
+        <li>Hébergeur : Privé</li>
+      </ul>
+      <p><span class="sensitive" data-value="" data-mask="Pour accéder aux informations sensibles, veuillez entrer le mot de passe ou me contacter directement grâce au formulaire prévu à cet effet."></span></p>
+    </div>
+  </div>
+
+  <!-- Politique de confidentialité -->
+  <div id="privacyModal" class="modal">
+    <div class="modal-content footer-modal">
+      <span class="close">&times;</span>
+      <h2>Politique de confidentialité</h2>
+      <p>Nous respectons votre vie privée. Les données personnelles collectées via le site sont utilisées uniquement pour :</p>
+      <ul>
+        <li>Répondre à vos demandes via le formulaire de contact</li>
+        <li>Améliorer l'expérience utilisateur</li>
+        <li>Établir des statistiques anonymes de visite</li>
+      </ul>
+      <p>Ces informations ne sont jamais communiquées à des tiers sans votre consentement explicite. Vous pouvez demander la suppression de vos données à tout moment via l’adresse email indiquée.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content contact-modal">
+      <span class="close">&times;</span>
+      <h2>Contactez-moi</h2>
+      <p>Vous pouvez me contacter via ce formulaire ou par les moyens suivants :</p>
+
+      <ul class="contact-list">
+        <li><strong>Email :</strong> <span class="sensitive" data-value="yvan.jcb@gmail.com" data-mask="xxxx@xxxx.xxx">xxxx@xxxx.xxx</span></li>
+        <li><strong>Téléphone :</strong> <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
+        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/yvan-jacob-186104385" target="_blank">Mon profil</a></li>
+      </ul>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="from_name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="from_email" placeholder="Votre email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Envoyer</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- POPUP MOT DE PASSE -->
+  <div id="passwordModal" class="access-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="access-modal__content">
+      <button class="access-modal__close" aria-label="Fermer">&times;</button>
+      <h2>Accès aux informations sensibles</h2>
+      <p>Mot de passe</p>
+
+      <input type="password" id="passwordInput" placeholder="Mot de passe">
+
+      <div class="access-modal__actions">
+        <button id="submitPassword" class="btn" type="button">Valider</button>
+        <button id="skipPassword" class="btn btn--ghost" type="button">Passer</button>
+      </div>
+
+      <p id="passwordError" class="access-error" style="display:none;">Mot de passe incorrect</p>
+    </div>
+  </div>
+
+</body>
+</html>

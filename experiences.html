@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="title">Expériences à l’étranger</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="navbar">
+      <!-- Drapeaux pour changer la langue -->
+      <div class="lang-switcher-grid">
+        <img src="images/fr.png" alt="Français" class="flag" data-lang="fr">
+        <img src="images/en.png" alt="English" class="flag" data-lang="en">
+        <img src="images/es.png" alt="Español" class="flag" data-lang="es">
+        <img src="images/cn.png" alt="中文" class="flag" data-lang="cn">
+      </div>
+
+      <!-- Menu -->
+      <nav id="navMenu" class="nav-menu" aria-hidden="true">
+        <a href="index.html" data-i18n="menu_home"></a>
+        <a href="ingenieur.html" data-i18n="menu_ingenieur"></a>
+        <a href="activite.html" data-i18n="menu_activite"></a>
+        <a href="experiences.html" data-i18n="menu_exp"></a>
+        <a href="projets.html" data-i18n="menu_projet"></a> 
+        <a href="cv.html" data-i18n="menu_cv"></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TITRE DE PAGE -->
+  <div class="page-title">
+    <h1 data-i18n="menu_exp"></h1>
+  </div>
+
+  <!-- ======= SECTION CARTE ======= -->
+  <main class="map-container">
+    <div class="map-wrapper">
+      <img src="images/map1.jpg" alt="Carte du monde" class="map-image">
+      <!-- PINS ici, inchangés -->
+      <a href="#tz-experience" class="pin type-vacances" style="top: 60%; left: 60.5%;" aria-label="Tanzanie - Vacances">
+        <img src="images/pin5.png" alt="Pin Tanzanie">
+        <span class="tooltip" data-i18n="exp_tz_title">Tanzanie — Vacances familiales</span>
+      </a>
+      <a href="#cn-experience" class="pin type-vacances" style="top: 32%; left: 80%;" aria-label="Chine - Vacances">
+        <img src="images/pin5.png" alt="Pin Chine">
+        <span class="tooltip" data-i18n="exp_cn_title">Chine — Vacances familiales</span>
+      </a>
+      <a href="#ed-experience" class="pin type-vacances" style="top: 59%; left: 22%;" aria-label="Équateur - Vacances">
+        <img src="images/pin5.png" alt="Pin Equateur">
+        <span class="tooltip" data-i18n="exp_ed_title">Équateur — Vacances familiales</span>
+      </a>
+      <a href="#cl-experience" class="pin type-vacances" style="top: 78%; left: 26%;" aria-label="Chili - Vacances">
+        <img src="images/pin5.png" alt="Pin Chili">
+        <span class="tooltip" data-i18n="exp_cl_title">Chili — Vacances familiales</span>
+      </a>
+      <a href="#in-experience" class="pin type-vacances" style="top: 46%; left: 74%;" aria-label="Inde - Vacances">
+        <img src="images/pin5.png" alt="Pin Inde">
+        <span class="tooltip" data-i18n="exp_in_title">Inde — Vacances familiales</span>
+      </a>
+      <a href="#fl-experience" class="pin type-echange" style="top: 23%; left: 55%;" aria-label="Finlande - Échange">
+        <img src="images/pin8.png" alt="Pin Finlande">
+        <span class="tooltip" data-i18n="exp_fl_title">Finlande — Échange scolaire</span>
+      </a>
+      <a href="#fr-experience" class="pin type-travail" style="top: 31%; left: 49%;" aria-label="France - Travail">
+        <img src="images/pin7.png" alt="Pin France">
+        <span class="tooltip" data-i18n="exp_fr_title">France — Travail d'été</span>
+      </a>
+      <a href="#ac-experience" class="pin type-vacances" style="top: 36%; left: 40%;" aria-label="Açores - Vacances">
+        <img src="images/pin5.png" alt="Pin Açores">
+        <span class="tooltip" data-i18n="exp_ac_title">Açores — Vacances familiales</span>
+      </a>
+    </div>
+
+    <!-- Filtres -->
+    <div class="map-filters">
+      <label>
+        <input type="checkbox" id="filter-travail" checked data-i18n="filter_travail_label"> 🛠️ 
+      </label>
+      <label>
+        <input type="checkbox" id="filter-vacances" checked data-i18n="filter_vacances_label"> 🌴 
+      </label>
+      <label>
+        <input type="checkbox" id="filter-echange" checked data-i18n="filter_echange_label"> 🎓 
+      </label>
+    </div>
+
+    <!-- TIMELINE / DÉTAILS DES EXPÉRIENCES -->
+    <div class="map-text">
+      <div class="timeline-line" aria-hidden="true"></div>
+
+      <!-- Toutes les sections d'expérience inchangées, mais structure conservée -->
+      <section id="fr-experience" class="experience-detail left type-travail" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_fr_title"></h3>
+          <p data-i18n="exp_fr_text"></p>
+        </div>
+
+        <!-- Cercle flottant en dehors du bloc -->
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/france/fournee.png" alt="Photo 1">
+          </div>
+        </div>
+      </section>
+
+
+      <section id="tz-experience" class="experience-detail right type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_tz_title"></h3>
+          <p data-i18n="exp_tz_text"></p>
+          <p>
+            📑 <a href="pdf/diapo_tanzanie.pdf" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="pres_tz"></span>
+            </a>
+          </p>
+        </div>
+
+        <!-- Cercle flottant en dehors du bloc -->
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/tanzanie/tz1.jpg" alt="Photo 1">
+            <img src="images/tanzanie/tz2.jpg" alt="Photo 2">
+            <img src="images/tanzanie/tz3.jpg" alt="Photo 3">
+          </div>
+        </div>
+      </section>
+
+
+      <section id="cn-experience" class="experience-detail left type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_cn_title"></h3>
+          <p data-i18n="exp_cn_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/chine/cn1.jpg" alt="Photo 1">
+            <img src="images/chine/cn2.jpg" alt="Photo 2">
+            <img src="images/chine/cn3.jpg" alt="Photo 3">
+          </div>
+        </div>
+      </section>
+
+      <section id="ed-experience" class="experience-detail right type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_ed_title"></h3>
+          <p data-i18n="exp_ed_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/equateur/ed1.jpg" alt="Photo 1">
+            <img src="images/equateur/ed2.jpg" alt="Photo 2">
+            <img src="images/equateur/ed3.jpg" alt="Photo 3">
+            <img src="images/equateur/ed4.jpg" alt="Photo 4">
+          </div>
+        </div>
+      </section>
+
+      <section id="cl-experience" class="experience-detail left type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_cl_title"></h3>
+          <p data-i18n="exp_cl_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/chili/cl1.jpg" alt="Photo 1">
+            <img src="images/chili/cl2.jpg" alt="Photo 2">
+            <img src="images/chili/cl3.jpg" alt="Photo 3">
+          </div>
+        </div>
+      </section>
+
+      <section id="in-experience" class="experience-detail right type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_in_title"></h3>
+          <p data-i18n="exp_in_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/inde/in1.jpg" alt="Photo 1">
+            <img src="images/inde/in2.jpg" alt="Photo 2">
+            <img src="images/inde/in3.jpg" alt="Photo 3">
+          </div>
+        </div>
+      </section>
+
+      <section id="ac-experience" class="experience-detail left type-vacances" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_ac_title"></h3>
+          <p data-i18n="exp_ac_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/acores/meduses.png" alt="Photo 1">
+            <img src="images/acores/dauphin1.jpg" alt="Photo 2">
+            <img src="images/acores/dauphin2.jpg" alt="Photo 3">
+            <img src="images/acores/dauphin3.jpg" alt="Photo 4">
+            <img src="images/acores/dauphin4.jpg" alt="Photo 5">
+          </div>
+        </div>
+      </section>
+
+      <section id="fl-experience" class="experience-detail right type-echange" tabindex="-1">
+        <div class="experience-text">
+          <h3 data-i18n="exp_fl_title"></h3>
+          <p data-i18n="exp_fl_text"></p>
+        </div>
+
+        <div class="experience-marker">
+          <div class="circle-carousel">
+            <img src="images/finlande/fl1.jpg" alt="Photo 1">
+            <img src="images/finlande/fl2.jpg" alt="Photo 2">
+            <img src="images/finlande/fl3.jpg" alt="Photo 3">
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======= SECTION CONCLUSION / REFLEXION ======= -->
+    <section class="experience-reflexion">
+      <div class="reflexion-container">
+        <h2 data-i18n="title_reflex"></h2>
+        <p data-i18n="exp_reflex"></p>
+
+        <div class="reflexion-cards">
+          <div class="reflexion-card">
+            <h3 data-i18n="exp_culture_title"></h3>
+            <p data-i18n="exp_culture_text"></p>
+          </div>
+          <div class="reflexion-card">
+            <h3 data-i18n="exp_adapt_title"></h3>
+            <p data-i18n="exp_adapt_text"></p>
+          </div>
+
+          <div class="reflexion-card">
+            <h3 data-i18n="exp_vis_title"></h3>
+            <p data-i18n="exp_vis_text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======= SECTION ENGAGEMENT PROFESSIONNEL ======= -->
+<section class="professional-engagement">
+  <div class="engagement-container">
+    <div class="engagement-header">
+      <h2 data-i18n="engagement_title"></h2>
+      <p class="subtitle" data-i18n="engagement_text"></p>
+    </div>
+
+    <div class="engagement-grid">
+      <!-- Carte 1 : Plongée -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🤿</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_diving_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_diving_text1"></span>
+              <span class="meta-item" data-i18n="engagement_diving_time"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p data-i18n="engagement_diving_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_diving_1"></span>
+            <span class="skill-tag" data-i18n="skill_diving_2"></span>
+            <span class="skill-tag" data-i18n="skill_diving_3"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2 : Basket -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🏀</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_basket_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_basket_text1"></span>
+              <span class="meta-item" data-i18n="engagement_basket_time"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p data-i18n="engagement_basket_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_basket_1"></span>
+            <span class="skill-tag" data-i18n="skill_basket_2"></span>
+            <span class="skill-tag" data-i18n="skill_basket_3"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3 : Délégué -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🎓</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_delegate_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_delegate_text1"></span>
+              <span class="meta-item" data-i18n="engagement_delegate_time"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p data-i18n="engagement_delegate_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_delegate_1"></span>
+            <span class="skill-tag" data-i18n="skill_delegate_2"></span>
+            <span class="skill-tag" data-i18n="skill_delegate_3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  </main>
+
+<!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p>&copy; 2025 Yvan JACOB. Tous droits réservés.</p>
+      <div class="footer-links">
+        <div id="lockIcon" class="lock-icon" role="button" aria-label="Accès protégé">
+          <img id="lockImage" src="images/lock-closed.png" alt="Cadenas" width="30">
+        </div>
+        <a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
+        <a href="#" class="open-modal" data-modal="privacyModal">Politique de confidentialité</a>
+        <a href="#" class="open-modal" data-modal="contactModal">Contact</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="last-modified">
+        Dernière modification : <span id="lastModified"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= MODALES ======= -->
+
+  <!-- Mentions légales -->
+  <div id="mentionsModal" class="modal">
+    <div class="modal-content footer-modal">
+      <span class="close">&times;</span>
+      <h2>Mentions légales</h2>
+      <p>Conformément à la législation en vigueur, voici les informations légales du site :</p>
+      <ul>
+        <li>Propriétaire du site : Yvan JACOB</li>
+        <li>Adresse : <span class="sensitive" data-value="12 rue Jacqueline Auriol, Toulouse" data-mask="XX XXX XXXXXXXXX XXXXXX, Toulouse">XX XXX XXXXXXXXX XXXXXX, Toulouse</span></li>
+        <li>Email : <span class="sensitive" data-value="yvan.jcb@gmail.com" data-mask="xxxx@xxxx.xxx">xxxx@xxxx.xxx</span></li>
+        <li>Téléphone : <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
+        <li>Hébergeur : Privé</li>
+      </ul>
+      <p><span class="sensitive" data-value="" data-mask="Pour accéder aux informations sensibles, veuillez entrer le mot de passe ou me contacter directement grâce au formulaire prévu à cet effet."></span></p>
+    </div>
+  </div>
+
+  <!-- Politique de confidentialité -->
+  <div id="privacyModal" class="modal">
+    <div class="modal-content footer-modal">
+      <span class="close">&times;</span>
+      <h2>Politique de confidentialité</h2>
+      <p>Nous respectons votre vie privée. Les données personnelles collectées via le site sont utilisées uniquement pour :</p>
+      <ul>
+        <li>Répondre à vos demandes via le formulaire de contact</li>
+        <li>Améliorer l'expérience utilisateur</li>
+        <li>Établir des statistiques anonymes de visite</li>
+      </ul>
+      <p>Ces informations ne sont jamais communiquées à des tiers sans votre consentement explicite. Vous pouvez demander la suppression de vos données à tout moment via l’adresse email indiquée.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content contact-modal">
+      <span class="close">&times;</span>
+      <h2>Contactez-moi</h2>
+      <p>Vous pouvez me contacter via ce formulaire ou par les moyens suivants :</p>
+
+      <ul class="contact-list">
+        <li><strong>Email :</strong> <span class="sensitive" data-value="yvan.jcb@gmail.com" data-mask="xxxx@xxxx.xxx">xxxx@xxxx.xxx</span></li>
+        <li><strong>Téléphone :</strong> <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
+        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/yvan-jacob-186104385" target="_blank">Mon profil</a></li>
+      </ul>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="from_name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="from_email" placeholder="Votre email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Envoyer</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- POPUP MOT DE PASSE -->
+  <div id="passwordModal" class="access-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="access-modal__content">
+      <button class="access-modal__close" aria-label="Fermer">&times;</button>
+      <h2>Accès aux informations sensibles</h2>
+      <p>Mot de passe</p>
+
+      <input type="password" id="passwordInput" placeholder="Mot de passe">
+
+      <div class="access-modal__actions">
+        <button id="submitPassword" class="btn" type="button">Valider</button>
+        <button id="skipPassword" class="btn btn--ghost" type="button">Passer</button>
+      </div>
+
+      <p id="passwordError" class="access-error" style="display:none;">Mot de passe incorrect</p>
+    </div>
+  </div>
+
+</body>
+</html>
