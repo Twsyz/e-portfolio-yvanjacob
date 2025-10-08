@@ -960,8 +960,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const sensitiveElements = document.querySelectorAll(".sensitive");
   const cvFrame = document.getElementById("cvFrame"); // iframe du CV
 
-  //const correctPassword = "MDPpourCAM2025-eportfolioYvAnJaCOB31400";
-  const correctPassword = "caca";
+  const correctPassword = "MDPpourCAM2025-eportfolioYvAnJaCOB31400";
+  //const correctPassword = "ca";
 
   // --- FUNCTIONS ---
   const showSensitive = () => {
