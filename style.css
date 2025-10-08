@@ -275,15 +275,18 @@ h1, h2, h3, .logo a {
   cursor: pointer;
   transform: translate(-50%, -100%);
   transition: transform 0.3s ease;
+  max-width: none !important; /* Annule la restriction de largeur pour les pins */
 }
 .pin img {
   width: 32px;
   height: 32px;
   transition: transform 0.3s ease;
+  max-width: none !important; /* Garde la taille originale des images de pins */
 }
 .pin:hover img {
   transform: translateY(-8px) scale(1.1);
 }
+
 
 /* TOOLTIP */
 .tooltip {
@@ -300,8 +303,9 @@ h1, h2, h3, .logo a {
   transform: translateX(-50%) translateY(-8px);
   white-space: nowrap;
   font-size: 0.9rem;
-  transition: opacity 0.2s ease, transform 0.3s ease;
-  z-index: 10;
+  transition: opacity 0.2s;
+  max-width: none !important; /* Les tooltips peuvent avoir leur taille normale */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 .pin:hover .tooltip {
   visibility: visible;
@@ -1044,6 +1048,31 @@ h1, h2, h3, .logo a {
 @media (max-width: 768px) {
   .modal {
     padding-top: 20%; /* décale plus bas sur petit écran */
+  }
+}
+
+/* Styles pour reCAPTCHA */
+.g-recaptcha {
+  margin: 15px 0;
+  transform: scale(0.9);
+  transform-origin: 0 0;
+}
+
+.g-recaptcha > div > div {
+  width: 100% !important;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Responsive pour reCAPTCHA */
+@media (max-width: 480px) {
+  .g-recaptcha {
+    transform: scale(0.85);
   }
 }
 
@@ -1874,3 +1903,81 @@ h1, h2, h3, .logo a {
   color: red;
   margin-top: 5px;
 }
+
+
+/* ======= VARIABLES ======= */
+:root {
+  --green: #4CAF50;
+  --text: #333;
+  --bg: #f9f9f9;
+  --card: #fff;
+  scroll-padding-top: 80px;
+}
+
+/* ======= CORRECTIONS POUR ÉVITER LE DÉFILEMENT HORIZONTAL ======= */
+
+/* Limiter la largeur des conteneurs principaux */
+.reflexion-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Corriger les sections à pleine largeur */
+.experience-reflexion,
+.professional-engagement {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* Assurer que la carte ne dépasse pas */
+.map-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+/* Corriger le conteneur PDF */
+.pdf-support {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/* S'assurer que tous les éléments respectent la largeur du viewport */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.map-container {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+/* Responsive pour très petits écrans */
+@media (max-width: 480px) {
+  .map-container,
+  .experience-reflexion,
+  .professional-engagement {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .map-filters {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
