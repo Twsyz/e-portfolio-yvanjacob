@@ -662,6 +662,9 @@ const cvFiles = {
 // ======================
 // Fonction pour changer la langue
 // ======================
+// ======================
+// Fonction pour changer la langue
+// ======================
 function setLanguage(lang) {
   const t = translations[lang] || translations.fr;
 
@@ -673,11 +676,14 @@ function setLanguage(lang) {
 
   const cvFrame = document.getElementById("cvFrame");
   if (cvFrame) {
-    // Vérifie si le mot de passe a été déverrouillé
+    // Mettre à jour l'attribut data-src avec le bon PDF selon la langue
+    cvFrame.dataset.src = cvFiles[lang] || cvFiles.fr;
+    
+    // Si déverrouillé, charger directement le vrai CV
     if (localStorage.getItem("isUnlocked") === "true") {
-      cvFrame.src = cvFiles[lang]; // vrai CV si déverrouillé
+      cvFrame.src = cvFrame.dataset.src;
     } else {
-      cvFrame.src = "cv/blank.pdf"; // sinon page blanche
+      cvFrame.src = "cv/blank.pdf";
     }
   }
 
@@ -700,14 +706,19 @@ function setLanguage(lang) {
   localStorage.setItem("preferredLang", lang);
 }
 
-
 // ======================
 // Initialisation DOM
 // ======================
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferredLang") || "fr";
-  setLanguage(savedLang);
+  const cvFrame = document.getElementById("cvFrame");
 
+
+  if (cvFrame) {
+    cvFrame.dataset.src = cvFiles[savedLang] || cvFiles.fr;
+  }
+  
+  setLanguage(savedLang);
   // Drapeaux pour changer la langue
   document.querySelectorAll(".flag").forEach(flag => {
     flag.addEventListener("click", () => {
@@ -734,6 +745,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const date = new Date(document.lastModified);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     lastModifiedEl.textContent = date.toLocaleDateString('fr-FR', options);
+  }
+  if (localStorage.getItem("isUnlocked") === "true") {
+    showSensitive(); // déjà déverrouillé
+  } else {
+    hideSensitive(); // sinon masqué
   }
 });
 
@@ -795,28 +811,104 @@ function initModals(){
   });
 }
 
+
 // ======================
-// Formulaire contact
+// Configuration reCAPTCHA
+// ======================
+const RECAPTCHA_SITE_KEY = "6LfP0eIrAAAAAPsnFrOwBRe19oy9bfHdKAvgu8T1";
+const RECAPTCHA_SECRET_KEY = "6LfP0eIrAAAAAOvr2IlopKErVAg7mLTpzmxC6h_C";
+
+// ======================
+// Formulaire contact avec reCAPTCHA
 // ======================
 function initContactForm(){
   const contactForm = document.getElementById("contact-form");
   const formStatus = document.getElementById("form-status");
+  const recaptchaError = document.getElementById("recaptcha-error");
+  
   if(!contactForm || !formStatus) return;
 
-  contactForm.addEventListener("submit", function(e){
+  contactForm.addEventListener("submit", async function(e){
     e.preventDefault();
 
-    emailjs.sendForm('service_kebxxpt', 'template_t311c3h', this)
-      .then(() => {
-        formStatus.style.color = "green";
-        formStatus.textContent = "Message envoyé avec succès !";
-        contactForm.reset();
-      }, (error) => {
-        formStatus.style.color = "red";
+    // Réinitialiser les messages d'erreur
+    formStatus.textContent = "";
+    recaptchaError.style.display = "none";
+
+    // Vérifier reCAPTCHA
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+      recaptchaError.style.display = "block";
+      formStatus.style.color = "red";
+      formStatus.textContent = "Veuillez compléter la vérification reCAPTCHA.";
+      return;
+    }
+
+    // Désactiver le bouton pendant l'envoi
+    const submitBtn = contactForm.querySelector('.submit-btn');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi en cours...";
+
+    try {
+      // Vérifier reCAPTCHA côté serveur (optionnel mais recommandé)
+      const isHuman = await verifyRecaptcha(recaptchaResponse);
+      
+      if (!isHuman) {
+        throw new Error("Échec de la vérification reCAPTCHA");
+      }
+
+      // Envoyer l'email via EmailJS
+      await emailjs.sendForm('service_kebxxpt', 'template_t311c3h', this);
+
+      formStatus.style.color = "green";
+      formStatus.textContent = "Message envoyé avec succès !";
+      contactForm.reset();
+      
+      // Réinitialiser reCAPTCHA
+      grecaptcha.reset();
+
+    } catch (error) {
+      console.error("Erreur:", error);
+      formStatus.style.color = "red";
+      
+      if (error.text === "Failed to verify reCAPTCHA") {
+        formStatus.textContent = "Échec de la vérification de sécurité. Veuillez réessayer.";
+      } else {
         formStatus.textContent = "Une erreur est survenue, réessayez plus tard.";
-        console.error("EmailJS error:", error);
-      });
+      }
+      
+      // Réinitialiser reCAPTCHA en cas d'erreur
+      grecaptcha.reset();
+    } finally {
+      // Réactiver le bouton
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Envoyer";
+    }
   });
+}
+
+// ======================
+// Vérification reCAPTCHA côté serveur (optionnel)
+// ======================
+async function verifyRecaptcha(recaptchaResponse) {
+  try {
+    const response = await fetch('/verify-recaptcha', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        recaptchaResponse: recaptchaResponse
+      })
+    });
+
+    const data = await response.json();
+    return data.success;
+  } catch (error) {
+    console.error("Erreur vérification reCAPTCHA:", error);
+    // En cas d'erreur, on accepte quand même pour ne pas bloquer l'utilisateur
+    return true;
+  }
 }
 
 // Ajouter ou retirer la classe 'scrolled' quand on descend
@@ -868,7 +960,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const sensitiveElements = document.querySelectorAll(".sensitive");
   const cvFrame = document.getElementById("cvFrame"); // iframe du CV
 
-  const correctPassword = "MDPpourCAM2025-eportfolioYvAnJaCOB31400";
+  //const correctPassword = "MDPpourCAM2025-eportfolioYvAnJaCOB31400";
+  const correctPassword = "caca";
 
   // --- FUNCTIONS ---
   const showSensitive = () => {
@@ -885,8 +978,12 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => lockIcon.style.transform = "rotate(0deg)", 200);
     localStorage.setItem("isUnlocked", "true");
 
-    // Charger le vrai PDF seulement quand déverrouillé
-    if (cvFrame) cvFrame.src = cvFrame.dataset.src;
+    // Charger le vrai PDF avec la langue actuelle
+    const cvFrame = document.getElementById("cvFrame");
+    if (cvFrame) {
+      const currentLang = localStorage.getItem("preferredLang") || "fr";
+      cvFrame.src = cvFiles[currentLang] || cvFiles.fr;
+    }
   };
 
   const hideSensitive = () => {
@@ -904,6 +1001,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("isUnlocked");
 
     // Remet la page blanche dans l'iframe
+    const cvFrame = document.getElementById("cvFrame");
     if (cvFrame) cvFrame.src = "cv/blank.pdf";
   };
 
