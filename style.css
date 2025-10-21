@@ -4,7 +4,7 @@
   --text: #333;
   --bg: #f9f9f9;
   --card: #fff;
-  scroll-padding-top: 80px; /* adapte la valeur à la hauteur de ton header */
+  scroll-padding-top: 80px; 
 }
 
 /* ======= POLICES ======= */
@@ -31,14 +31,14 @@ h1, h2, h3, .logo a {
   top: 0;
   z-index: 9999;
 
-  background: rgba(255, 255, 255, 0.1); /* fond blanc très transparent */
-  backdrop-filter: blur(10px); /* flou derrière, effet glass */
-  border-bottom: none; /* supprime la bordure si tu veux */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* léger ombrage */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  border-bottom: none; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
   transition: background 0.3s ease;
 }
 
-/* Quand on scroll un peu, tu peux rendre la barre un peu plus opaque */
+
 .site-header.scrolled {
   background: rgba(255, 255, 255, 0.85);
 }
@@ -57,8 +57,8 @@ h1, h2, h3, .logo a {
 }
 
 .nav-menu a {
-  font-family: "Merriweather", serif !important;/* force la police */
-  font-size: 1rem; /* ou 16px pour être sûr */
+  font-family: "Merriweather", serif !important
+  font-size: 1rem; 
   font-weight: 600;
   color: var(--text);
   transition: color 0.2s ease;
@@ -86,10 +86,10 @@ h1, h2, h3, .logo a {
   position: absolute;
   left: 0;
   top: 0;
-  width: 120px; /* largeur du bloc vertical */
+  width: 120px; 
   height: 100%;
-  background-color: rgba(76, 175, 80, 0.85); /* semi-transparent pour passer derrière */;
-  z-index: 0; /* derrière le contenu */
+  background-color: rgba(76, 175, 80, 0.85); 
+  z-index: 0; 
 }
 
 .intro-content {
@@ -99,8 +99,8 @@ h1, h2, h3, .logo a {
   gap: 3rem;
   flex-wrap: wrap;
   position: relative;
-  z-index: 1; /* devant le bloc vertical */
-  padding-left: 40px; /* un petit décalage pour que le texte ne touche pas le bloc */
+  z-index: 1; 
+  padding-left: 40px; 
 }
 
 .intro-text {
@@ -125,7 +125,7 @@ h1, h2, h3, .logo a {
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 1; /* assure que la photo est devant le bloc */
+  z-index: 1; 
 }
 
 .profile-pic {
@@ -275,13 +275,13 @@ h1, h2, h3, .logo a {
   cursor: pointer;
   transform: translate(-50%, -100%);
   transition: transform 0.3s ease;
-  max-width: none !important; /* Annule la restriction de largeur pour les pins */
+  max-width: none !important; 
 }
 .pin img {
   width: 32px;
   height: 32px;
   transition: transform 0.3s ease;
-  max-width: none !important; /* Garde la taille originale des images de pins */
+  max-width: none !important; 
 }
 .pin:hover img {
   transform: translateY(-8px) scale(1.1);
@@ -304,8 +304,8 @@ h1, h2, h3, .logo a {
   white-space: nowrap;
   font-size: 0.9rem;
   transition: opacity 0.2s;
-  max-width: none !important; /* Les tooltips peuvent avoir leur taille normale */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  max-width: none !important; 
+  white-space: nowrap; 
 }
 .pin:hover .tooltip {
   visibility: visible;
@@ -315,7 +315,7 @@ h1, h2, h3, .logo a {
 
 /* ======= TIMELINE (DOM-based, robust stacking) ======= */
 .map-text {
-  position: relative;       /* contexte d'empilement local */
+  position: relative;       
   z-index: 0;
   max-width: 1200px;
   margin: 3rem auto;
@@ -331,14 +331,14 @@ h1, h2, h3, .logo a {
   width: 4px;
   background: var(--green);
   transform: translateX(-50%);
-  z-index: 0;              /* ligne derrière les cartes */
-  pointer-events: none;    /* laisse cliquer à travers */
+  z-index: 0;              
+  pointer-events: none;    
 }
 
 /* Chaque expérience (devant la ligne) */
 .experience-detail {
-  position: relative;      /* important pour le z-index local */
-  z-index: 2;              /* au-dessus de la ligne */
+  position: relative;      
+  z-index: 2;              
   width: 75%;
   padding: 1.5rem;
   background: var(--card);
@@ -378,7 +378,7 @@ h1, h2, h3, .logo a {
 /* Responsive : conserve le même principe */
 @media (max-width: 768px) {
   .map-text { padding-left: 0; }
-  .timeline-line { left: 8px; transform: none; } /* décalée à gauche sur mobile */
+  .timeline-line { left: 8px; transform: none; } 
   .experience-detail {
     width: 100%;
     margin-left: 2rem;
@@ -395,7 +395,7 @@ h1, h2, h3, .logo a {
 
 .experience-text p {
   text-align: justify;
-  text-justify: inter-word; /* optionnel : répartit mieux les espaces */
+  text-justify: inter-word; 
 }
 
 
@@ -429,7 +429,7 @@ h1, h2, h3, .logo a {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* <- fondu de 1 seconde */
+  transition: opacity 1s ease-in-out; 
 }
 
 
@@ -814,7 +814,7 @@ h1, h2, h3, .logo a {
   gap: 0.8rem;
   font-size: 0.9rem;
   color: #6c757d;
-  flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+  flex-wrap: wrap; 
 }
 
 .meta-item {
@@ -918,7 +918,7 @@ h1, h2, h3, .logo a {
 /* Pour les très petits écrans */
 @media (max-width: 480px) {
   .card-meta {
-    flex-direction: column; /* Passe en colonne seulement si vraiment nécessaire */
+    flex-direction: column; 
     gap: 0.5rem;
   }
   
@@ -1047,7 +1047,7 @@ h1, h2, h3, .logo a {
 /* Responsive */
 @media (max-width: 768px) {
   .modal {
-    padding-top: 20%; /* décale plus bas sur petit écran */
+    padding-top: 20%; 
   }
 }
 
@@ -1084,7 +1084,6 @@ h1, h2, h3, .logo a {
 
 .cv-container {
   margin-top: 0;
-  /* on ne fixe pas la hauteur ici : le JS la calcule et applique directement sur .cv-viewer */
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - var(--header-height));
@@ -1094,7 +1093,7 @@ h1, h2, h3, .logo a {
   margin: 20px auto;
   width: 90%;
   max-width: 900px;
-  height: 160vh; /* prend toute la hauteur de l’écran */
+  height: 160vh; 
   border: 2px solid #ccc;
   border-radius: 12px;
   overflow: hidden;
@@ -1103,13 +1102,13 @@ h1, h2, h3, .logo a {
 
 .cv-viewer iframe {
   width: 100%;
-  height: 100%; /* occupe toute la hauteur du conteneur */
+  height: 100%; 
   border: none;
 }
 
-/* ===================== */
-/* PAGE INGENIEUR        */
-/* ===================== */
+
+/* -----------PAGE INGENIEUR----------*/
+
 
 .ingenieur-container {
   max-width: 10000px;
@@ -1151,7 +1150,7 @@ h1, h2, h3, .logo a {
   left: 50%;
   width: 4px;
   height: 100%;
-  background: #2ecc71; /* Ligne verte */
+  background: #2ecc71; 
   transform: translateX(-50%);
   border-radius: 2px;
 }
@@ -1159,7 +1158,7 @@ h1, h2, h3, .logo a {
 .timeline-item {
   position: relative;
   width: 48%;
-  min-height: 220px; /* plus grand qu'avant */
+  min-height: 220px; 
   padding: 25px;
   background: #fff;
   border: 1px solid #ddd;
@@ -1184,9 +1183,9 @@ h1, h2, h3, .logo a {
 .pdf-support {
   position: relative;
   width: 102.5%;
-  max-width: 880px;   /* limite la largeur si tu veux */
+  max-width: 880px;   
   margin: 20px auto;
-  aspect-ratio: 16 / 9; /* ou 4/3 si tu préfères */
+  aspect-ratio: 16 / 9; 
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -1298,8 +1297,8 @@ h1, h2, h3, .logo a {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Scroll si contenu trop grand */
-  background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.6); 
   transition: opacity 0.3s ease;
 }
 
@@ -1310,7 +1309,8 @@ h1, h2, h3, .logo a {
 
 .modal-content {
   background-color: #fff;
-  margin: 5% auto; /* Centré verticalement et horizontalement */
+  margin: 5% auto; 
+  
   padding: 20px;
   border-radius: 12px;
   max-width: 600px;
