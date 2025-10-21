@@ -662,9 +662,6 @@ const cvFiles = {
 // ======================
 // Fonction pour changer la langue
 // ======================
-// ======================
-// Fonction pour changer la langue
-// ======================
 function setLanguage(lang) {
   const t = translations[lang] || translations.fr;
 
