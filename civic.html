@@ -11,10 +11,10 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-
   <!-- ======= HEADER ======= -->
   <header class="site-header">
     <div class="navbar">
+
       <!-- Drapeaux pour changer la langue -->
       <div class="lang-switcher-grid">
         <img src="images/fr.png" alt="Français" class="flag" data-lang="fr">
@@ -38,64 +38,88 @@
 
   <!-- TITRE DE PAGE -->
   <div class="page-title">
-    <h1 data-i18n="menu_projet"></h1>
+    <h1 data-i18n="menu_civic"></h1>
   </div>
 
-  <!-- ======= SECTION PROJETS ======= -->
-  <section class="projets">
-
-    <!-- ======= TEXTE ARCHITECTURE NAVALE ======= -->
-    <div class="naval_architecture">
-      <p data-i18n="projet_texte"></p>
-      <p data-i18n="pourquoi_texte"></p>
+    <section class="professional-engagement">
+  <div class="engagement-container">
+    <div class="engagement-header">
+      <p class="subtitle" data-i18n="engagement_text"></p>
     </div>
 
-    <!-- ======= VIDEO + PERSONNES ======= -->
-    <h1 data-i18n="video_title"></h1>
-    <div class="interview-wrapper">
-      <!-- VIDEO A GAUCHE -->
-      <video class="presentation-video" controls>
-        <source src="images/presentation_cam.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
+    <div class="engagement-grid">
+      <!-- Carte 1 : Plongée -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🤿</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_diving_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_diving_text1"></span>
+              <span class="meta-item" data-i18n="engagement_diving_time"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p data-i18n="engagement_diving_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_diving_1"></span>
+            <span class="skill-tag" data-i18n="skill_diving_2"></span>
+            <span class="skill-tag" data-i18n="skill_diving_3"></span>
+          </div>
+        </div>
+      </div>
 
-      <!-- BLOCS PERSONNES A DROITE -->
-      <div class="person-cards">
-        <div class="person-card">
-          <p><strong data-i18n="person1_name"></strong>, <span data-i18n="person1_age"></span> ans</p>
-          <p data-i18n="person1_job"></p>
-          <p data-i18n="person1_location"></p>
+      <!-- Carte 2 : Basket -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🏀</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_basket_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_basket_text1"></span>
+              <span class="meta-item" data-i18n="engagement_basket_time"></span>
+            </div>
+          </div>
         </div>
-        <div class="person-card">
-          <p><strong data-i18n="person2_name"></strong>, <span data-i18n="person2_age"></span> ans</p>
-          <p data-i18n="person2_job"></p>
-          <p data-i18n="person2_location"></p>
+        <div class="card-content">
+          <p data-i18n="engagement_basket_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_basket_1"></span>
+            <span class="skill-tag" data-i18n="skill_basket_2"></span>
+            <span class="skill-tag" data-i18n="skill_basket_3"></span>
+          </div>
         </div>
-        <div class="person-card">
-          <p><strong data-i18n="person3_name"></strong>, <span data-i18n="person3_age"></span> ans</p>
-          <p data-i18n="person3_job"></p>
-          <p data-i18n="person3_location"></p>
+      </div>
+
+      <!-- Carte 3 : Délégué -->
+      <div class="engagement-card">
+        <div class="card-header">
+          <div class="card-icon">🎓</div>
+          <div class="card-title">
+            <h3 data-i18n="engagement_delegate_title"></h3>
+            <div class="card-meta">
+              <span class="meta-item" data-i18n="engagement_delegate_text1"></span>
+              <span class="meta-item" data-i18n="engagement_delegate_time"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p data-i18n="engagement_delegate_text2"></p>
+          <div class="card-skills">
+            <span class="skill-tag" data-i18n="skill_delegate_1"></span>
+            <span class="skill-tag" data-i18n="skill_delegate_2"></span>
+            <span class="skill-tag" data-i18n="skill_delegate_3"></span>
+          </div>
         </div>
       </div>
     </div>
 
-    <p data-i18n="presentation_video"></p>
+  </div>
+</section>
 
-  </section>
 
-  <!-- ======= CONTENU PRINCIPAL ======= -->
-  <main class="projects-container">
-    <p data-i18n="projet_domaine"></p>
-  </main>
-
-  <!-- ======= SECTION BATEAU ======= -->
-  <section id="bateau-section" class="bateau-section">
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <img src="images/bateau.jpg" alt="Bateau" class="bateau" />
-  </section>
-
+  
 <!-- ======= FOOTER ======= -->
   <footer class="site-footer">
     <div class="footer-left">
@@ -193,6 +217,7 @@
     </div>
   </div>
 
+
   <!-- POPUP MOT DE PASSE -->
   <div id="passwordModal" class="access-modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="access-modal__content">
@@ -213,3 +238,4 @@
 
 </body>
 </html>
+

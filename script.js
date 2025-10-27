@@ -13,10 +13,11 @@ const translations = {
     title: "E-Portfolio d'Yvan JACOB",
     main_title: "E-Portfolio d'Yvan JACOB",
     menu_home: "Accueil",
-    menu_activite: "Autres activités",
-    menu_ingenieur: "Parcours ingénieur",
+    menu_activite: "Sports et autres activités",
+    menu_ingenieur: "Projets d'ingénieurs",
     menu_projet:"Projets professionnels",
-    menu_exp: "Expériences professionnelles, internationales et civiques",
+    menu_exp: "Expériences professionnelles, internationales",
+    menu_civic: "Expériences civiques",
     menu_cv: "CV",
     intro_text: "Moi, c'est Yvan JACOB, je suis étudiant à l'ENSEEIHT (Mécanique des fluides – Eau – Environnement) en première année. Vous pouvez découvrir ici mon parcours, mes expériences mais aussi mon projet professionnel. Si vous avez une quelconque question, vous pouvez passer par le formulaire de contact.",
 
@@ -38,7 +39,7 @@ const translations = {
 
     // 🇪🇨 Équateur
     exp_ed_title: "🇪🇨 Équateur — Vacances",
-    exp_ed_text: "J'ai eu la chance, en 2018, de partir en Equateur. Nous avons découvert tous les climats du pays: le coeur de l'Amazonie, les pentes étriquées du Cotopaxi mais aussi la biodiversité sans égal des îles Galapagos. Le plus étonnant, selon moi, reste la présence de tribus très réculées, que l'on a pu apercevoir depuis la pirogue, vivant de manière si paisible dans des conditions pourtant hostiles. Nous avons ensuite découvert les îles galapgos, ces îles volcaniques, riches en biodiveristé, où j'ai pu nager avec des requins, des tortues et des iguanes marins. J'ai aussi fait beaucoup de randonnée sur les différents volcans et caldeiras de ces îles.",
+    exp_ed_text: "J'ai eu la chance, en 2018, de partir en Equateur. Nous avons découvert tous les climats du pays: le coeur de l'Amazonie, les pentes étriquées du Cotopaxi mais aussi la biodiversité sans égal des îles Galapagos. Le plus étonnant, selon moi, reste la présence de tribus très réculées, que l'on a pu apercevoir depuis la pirogue, vivant de manière si paisible dans des conditions pourtant hostiles. Nous avons ensuite découvert les îles galapagos, ces îles volcaniques, riches en biodiveristé, où j'ai pu nager avec des requins, des tortues et des iguanes marins. J'ai aussi fait beaucoup de randonnée sur les différents volcans et caldeiras de ces îles.",
 
     // 🇨🇱 Chili
     exp_cl_title: "🇨🇱 Chili — Vacances",
@@ -143,7 +144,7 @@ const translations = {
     voile_texte: "J'ai commencé très tôt la voile avec l'optimist, j'ai ensuite continué avec le catamaran. C'est ce sport qui m'a poussé vers cette carrière professionelle.",
 
     rando_title: "Randonnée",
-    rando_texte: "J'aime beaucoup la randonnée, j'ai fait plusieurs treks en montagne, le dernier en date étant le Tour des Aiguilles Rouges pendat l'été 2025.",
+    rando_texte: "J'aime beaucoup la randonnée, j'ai fait plusieurs treks en montagne, le dernier en date étant le Tour des Aiguilles Rouges pendant l'été 2025.",
 
     photo_title: "Photographie",
     photo_texte: "Ce qui me plait dans la photographie reste d'immortaliser des moments, des paysages, des instants de vie.",
@@ -155,16 +156,16 @@ const translations = {
     impression_texte: "J'ai commencé l'impression 3D en 2023 avec une Creality Ender 3, puis j'ai continué avec une Kingroon KP5L. J'ai aimé la possibilité de concrétiser mes modélisations grâce à cette révolution technologique.",
 
     apnee_title: "Apnée",
-    apnee_texte: "Etant ashmatique, je me suis dirigé vers l'apnée en 2020. Cela m'a permis de découvrir les fonds marins mais aussi de me surpasser physiquement et mentalement.",
+    apnee_texte: "Etant asthmatique, je me suis dirigé vers l'apnée en 2020. Cela m'a permis de découvrir les fonds marins mais aussi de me surpasser physiquement et mentalement.",
 
     basket_title: "Basket",
-    basket_texte: "J'ai commencé le basket en 2012, j'ai joué en club jusqu'en 2021 lorsque je m'entranaîs avec une équipe de N2: les Canonniers de Metz mais ne parcitipait pas aux matchs. J'aime ce sport pour son esprit d'équipe et son intensité. En effet, j'étais très investi dans mon premier club (Jura Dolois Basket) où je passais l'entièreté de mes samedis à arbitrer et faire la table de match.",
+    basket_texte: "J'ai commencé le basket en 2012, j'ai joué en club jusqu'en 2021 lorsque je m'entranaîs avec une équipe de N2: les Canonniers de Metz mais ne parcitipais pas aux matchs. J'aime ce sport pour son esprit d'équipe et son intensité. En effet, j'étais très investi dans mon premier club (Jura Dolois Basket) où je passais l'entièreté de mes samedis à arbitrer et faire la table de match.",
 
     tennis_title: "Tennis",
     tennis_texte: "A l'âge de 4ans, je tapais déjà ma première balle. J'ai joué en club mais n'ai jamais fait beaucoup de compétition. J'aime ce sport pour la concentration et l'agilité qu'il demande.",
 
     percussions_title: "Percussions",
-    percussions_texte: "Ayant été élevé dans une famille de musiciens, j'ai péné à trouver un instrument qui me correspondait, j'ai trouvé les percussions en passant par la trompette, le saxophone et d'autres. J'ai particulièrement apprécié mes années au conservatoire à rayonnement départemental de Dole lorsque beaucoup d'évènements étaient organisés: batucadas, concerts du conservatoire et bien d'autres.",
+    percussions_texte: "Ayant été élevé dans une famille de musiciens, j'ai peiné à trouver un instrument qui me correspondait, j'ai trouvé les percussions en passant par la trompette, le saxophone et d'autres. J'ai particulièrement apprécié mes années au conservatoire à rayonnement départemental de Dole lorsque beaucoup d'évènements étaient organisés: batucadas, concerts du conservatoire et ce, dans des endroits variés.",
 
 
 
@@ -175,10 +176,11 @@ const translations = {
     title: "Yvan JACOB's E-Portfolio",
     main_title: "Yvan JACOB's E-Portfolio",
     menu_home: "Home",
-    menu_activite: "Other activities",
-    menu_ingenieur: "Engineering path",
-    menu_projet:"Professional projects",
-    menu_exp: "Professional, international and civic experiences",
+    menu_activite: "Sports and other activities",
+    menu_ingenieur: "Engineering Courses",
+    menu_projet:"Career Development",
+    menu_exp: "Mobility",
+    menu_civic: "Civic Engagement",
     menu_cv: "Resume",
     intro_text: "I'm Yvan JACOB, a first-year student at ENSEEIHT (Fluid Mechanics - Water - Environment). Here you can discover my background, experiences, and professional project. If you have any questions, feel free to use the contact form.",
 
@@ -334,11 +336,13 @@ const translations = {
     title: "E-Portafolio de Yvan JACOB",
     main_title: "E-Portafolio de Yvan JACOB",
     menu_home: "Inicio",
-    menu_activite: "Otras actividades",
-    menu_ingenieur: "Trayectoria de ingeniería",
-    menu_projet:"Proyectos profesionales",
-    menu_exp: "Experiencias profesionales, internacionales y cívicas",
-    menu_cv: "CV",
+    menu_activite: "Deportes y otras actividades",
+    menu_ingenieur: "Cursos de ingeniería",
+    menu_projet:"Desarrollo profesional",
+    menu_exp: "Movilidad",
+    menu_civic: "Compromiso cívico",
+    menu_cv: "Currículum",
+    
     intro_text: "Soy Yvan JACOB, un estudiante de primer año en ENSEEIHT (Mecánica de Fluidos - Agua - Medio Ambiente). Aquí puedes descubrir mi formación, experiencias y proyecto profesional. Si tienes alguna pregunta, no dudes en utilizar el formulario de contacto.",
 
     filter_travail_label: "Trabajo",
@@ -491,10 +495,11 @@ const translations = {
     title: "Yvan JACOB的电子作品集",
     main_title: "Yvan JACOB的电子作品集",
     menu_home: "首页",
-    menu_activite: "其他活动",
-    menu_ingenieur: "工程师之路",
-    menu_projet:"专业项目",
-    menu_exp: "专业、国际和公民经验",
+    menu_activite: "体育及其他活动",
+    menu_ingenieur: "工程课程",
+    menu_projet:"职业发展",
+    menu_exp: "流动性",
+    menu_civic: "公民参与",
     menu_cv: "简历",
     intro_text: "我是Yvan JACOB，ENSEEIHT（流体力学-水-环境）的一年级学生。在这里，您可以了解我的背景、经验和职业规划。如果您有任何问题，请随时使用联系表格。",
 

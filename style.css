@@ -53,18 +53,25 @@ h1, h2, h3, .logo a {
 
 .nav-menu {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.9rem;
+  text-align: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: auto;
+  text-align: center;
+  margin-left: 0.2rem; 
 }
 
 .nav-menu a {
-  font-family: "Merriweather", serif !important
-  font-size: 1rem; 
+  font-family: "Merriweather", serif !important;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--text);
   transition: color 0.2s ease;
   text-decoration: none;
 }
-
 
 .nav-menu a:hover {
   color: var(--green);
