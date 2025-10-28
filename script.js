@@ -16,7 +16,7 @@ const translations = {
     menu_activite: "Sports et autres activités",
     menu_ingenieur: "Projets d'ingénieurs",
     menu_projet:"Projets professionnels",
-    menu_exp: "Expériences professionnelles, internationales",
+    menu_exp: "Expériences professionnelles et internationales",
     menu_civic: "Expériences civiques",
     menu_cv: "CV",
     intro_text: "Moi, c'est Yvan JACOB, je suis étudiant à l'ENSEEIHT (Mécanique des fluides – Eau – Environnement) en première année. Vous pouvez découvrir ici mon parcours, mes expériences mais aussi mon projet professionnel. Si vous avez une quelconque question, vous pouvez passer par le formulaire de contact.",
