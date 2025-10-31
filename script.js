@@ -718,9 +718,12 @@ function setLanguage(lang) {
 // Initialisation DOM
 // ======================
 document.addEventListener("DOMContentLoaded", () => {
+
+  initMobileMenu(); // Ajouter cette ligne en premier
+
   const savedLang = localStorage.getItem("preferredLang") || "fr";
   const cvFrame = document.getElementById("cvFrame");
-
+  
 
   if (cvFrame) {
     cvFrame.dataset.src = cvFiles[savedLang] || cvFiles.fr;
@@ -1079,3 +1082,47 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cvFrame) cvFrame.src = "cv/blank.pdf";
   }
 });
+
+
+// ======================
+// Gestion du menu mobile
+// ======================
+function initMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    if (!navMenu) return;
+
+    // Créer le bouton hamburger
+    const hamburger = document.createElement('button');
+    hamburger.className = 'hamburger';
+    hamburger.innerHTML = '☰';
+    hamburger.setAttribute('aria-label', 'Menu');
+    
+    // Insérer le hamburger dans la navbar
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        navbar.appendChild(hamburger);
+    }
+
+    // Gérer le clic sur le hamburger
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('open');
+        hamburger.innerHTML = navMenu.classList.contains('open') ? '✕' : '☰';
+    });
+
+    // Fermer le menu en cliquant à l'extérieur
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+            navMenu.classList.remove('open');
+            hamburger.innerHTML = '☰';
+        }
+    });
+
+    // Fermer le menu en cliquant sur un lien
+    navMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            navMenu.classList.remove('open');
+            hamburger.innerHTML = '☰';
+        }
+    });
+}
