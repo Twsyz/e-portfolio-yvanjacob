@@ -725,6 +725,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cvFrame) {
     cvFrame.dataset.src = cvFiles[savedLang] || cvFiles.fr;
   }
+
+  initMobileMenu(); // Ajouter cette ligne
   
   setLanguage(savedLang);
   // Drapeaux pour changer la langue
@@ -1079,3 +1081,57 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cvFrame) cvFrame.src = "cv/blank.pdf";
   }
 });
+
+// ======================
+// Gestion du menu mobile
+// ======================
+function initMobileMenu() {
+  const navMenu = document.getElementById('navMenu');
+  const hamburger = document.createElement('div');
+  hamburger.className = 'hamburger';
+  hamburger.innerHTML = '☰';
+  hamburger.style.cssText = `
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+  `;
+  
+  document.querySelector('.navbar').appendChild(hamburger);
+  
+  // Styles pour le menu mobile
+  const style = document.createElement('style');
+  style.textContent = `
+    @media (max-width: 768px) {
+      .hamburger { display: block; }
+      .nav-menu { 
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .nav-menu.open { display: flex; }
+    }
+  `;
+  document.head.appendChild(style);
+  
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+  
+  // Fermer le menu en cliquant à l'extérieur
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.navbar') && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open');
+    }
+  });
+}
