@@ -720,7 +720,7 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
 
   initMobileMenu(); // Ajouter cette ligne en premier
-
+  initVideoHover(); 
   const savedLang = localStorage.getItem("preferredLang") || "fr";
   const cvFrame = document.getElementById("cvFrame");
   
@@ -1126,3 +1126,53 @@ function initMobileMenu() {
         }
     });
 }
+
+// Contrôle des vidéos au survol
+function initVideoHover() {
+  const percussionCard = document.querySelector('.percussion-card');
+  
+  if (!percussionCard) return;
+  
+  const video = percussionCard.querySelector('.hover-video');
+  
+  // Démarrer la vidéo au survol
+  percussionCard.addEventListener('mouseenter', () => {
+    if (video.paused) {
+      video.play().catch(e => console.log("Autoplay prevented:", e));
+    }
+  });
+  
+  // Mettre en pause quand on quitte
+  percussionCard.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0; // Revenir au début
+  });
+  
+  // Pour mobile : toucher pour jouer
+  percussionCard.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (video.paused) {
+      video.play();
+      video.controls = true; // Afficher les contrôles sur mobile
+    } else {
+      video.pause();
+      video.controls = false;
+    }
+  });
+}
+
+function initPercussionVideo() {
+  const percussionCard = document.querySelector('.percussion-card');
+  const video = percussionCard.querySelector('.percussion-video');
+  
+  percussionCard.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  
+  percussionCard.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initPercussionVideo);
