@@ -1761,6 +1761,126 @@ h1, h2, h3, .logo a {
     margin-top: 0.5rem;
   }
 }
+/* ======= FOOTER AVEC LOGO À DROITE ======= */
+.site-footer {
+  background-color: var(--green);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 3px solid var(--green); /* Même vert que le fond */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer .footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.site-footer .footer-links a:hover {
+  color: #f0f0f0;
+}
+
+/* Conteneur pour logo + date */
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Style du logo dans le footer */
+.footer-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  background: white;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Cadre date dernière modification */
+.footer-right .last-modified {
+  border: 1px solid #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background-color: rgba(255,255,255,0.1);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.footer-right .last-modified:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Responsive : empilement sur petit écran */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-logo-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-logo {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .footer-right {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .site-footer .footer-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .footer-right .last-modified {
+    white-space: normal;
+    font-size: 0.8rem;
+  }
+}
+
 
 /* ======= MODALES ======= */
 .modal {
@@ -2828,3 +2948,4 @@ h1, h2, h3, .logo a {
         padding-right: 3rem; /* Espace pour le hamburger */
     }
 }
+
