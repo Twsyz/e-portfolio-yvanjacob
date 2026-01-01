@@ -1007,6 +1007,201 @@ h1, h2, h3, .logo a {
   }
 }
 
+/* ======= RESPONSIVE SECTION DÉVELOPPEMENT DURABLE ======= */
+
+/* Pour les téléphones */
+@media (max-width: 768px) {
+  .sustainable-development {
+    padding: 2rem 1rem;
+  }
+  
+  .sd-header {
+    margin-bottom: 2rem;
+  }
+  
+  .sd-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .sd-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  /* Layout sur une colonne */
+  .sd-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Section image */
+  .sd-pdf-side {
+    position: static;
+  }
+  
+  .pdf-container {
+    padding: 1.5rem;
+  }
+  
+  .pdf-actions {
+    flex-direction: column;
+  }
+  
+  .pdf-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Section description */
+  .sd-desc-side {
+    padding: 1.5rem;
+  }
+  
+  .project-description h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  /* Métadonnées en colonne */
+  .project-meta {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .meta-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .meta-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Supprime les <br> sur mobile */
+  .meta-item p br {
+    display: none;
+  }
+  
+  /* ODD en colonne */
+  .odd-list {
+    gap: 1rem;
+  }
+  
+  .odd-item-desc {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .odd-number-desc {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 0 auto 0.5rem auto;
+  }
+  
+  /* Impact en grille 2x2 */
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .impact-item {
+    padding: 1rem;
+  }
+  
+  .impact-value {
+    font-size: 1.5rem;
+  }
+  
+  .impact-label {
+    font-size: 0.85rem;
+  }
+  
+  /* Contexte */
+  .project-context {
+    padding: 1.2rem;
+  }
+  
+  .project-context h4 {
+    text-align: center;
+  }
+  
+  .project-context p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Pour les très petits téléphones */
+@media (max-width: 480px) {
+  .sd-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .project-description h3 {
+    font-size: 1.3rem;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .odd-item-desc {
+    padding: 0.8rem;
+  }
+  
+  .odd-item-desc strong {
+    font-size: 0.95rem;
+  }
+  
+  .odd-item-desc p {
+    font-size: 0.85rem;
+  }
+  
+  .project-meta h4 {
+    font-size: 1.1rem;
+  }
+  
+  .project-meta p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Correction pour les sauts de ligne */
+.meta-item p {
+  white-space: normal;
+  line-height: 1.5;
+}
+
+/* Pour masquer les <br> sur mobile et utiliser des espaces normaux */
+@media (max-width: 768px) {
+  .meta-team-desc br,
+  .meta-duration-desc br {
+    display: none;
+  }
+  
+  .meta-team-desc,
+  .meta-duration-desc {
+    display: block;
+  }
+}
+
+/* Ajustement des images */
+@media (max-width: 768px) {
+  .image-container {
+    padding: 0.5rem;
+  }
+  
+  .info-image {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
 /* Styles pour l'image infographique */
 .image-container {
   display: flex;
