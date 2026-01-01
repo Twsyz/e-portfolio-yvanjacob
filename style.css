@@ -478,6 +478,8 @@ h1, h2, h3, .logo a {
   transform: scale(1.2);
 }
 
+/* ======= SECTION CIVIC ENGAGEMENT PATCHWORK ======= */
+
 .civic-engagement {
   margin: 4rem auto;
   padding: 2rem;
@@ -552,6 +554,562 @@ h1, h2, h3, .logo a {
   font-style: italic;
   color: #333;
   max-width: 300px;
+}
+
+/* ======= SECTION DÉVELOPPEMENT DURABLE ======= */
+.sustainable-development {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eaeaea;
+}
+
+.sd-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sd-header h2 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
+.sd-subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.sd-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Layout principal */
+.sd-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Côté PDF/Infographie */
+.sd-pdf-side {
+  position: sticky;
+  top: 2rem;
+}
+
+.pdf-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Aperçu A4 Portrait */
+.a4-preview {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%),
+              linear-gradient(-45deg, #f8f9fa 25%, transparent 25%),
+              linear-gradient(45deg, transparent 75%, #f8f9fa 75%),
+              linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.a4-preview-header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a4-preview-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.pdf-badge {
+  background: #3498db;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.a4-preview-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.preview-section {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.preview-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preview-odd-grid {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.preview-odd {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.preview-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.preview-stat {
+  text-align: center;
+}
+
+.preview-stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.preview-stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.preview-logo {
+  text-align: center;
+  padding: 1rem;
+}
+
+.preview-logo-circle {
+  width: 60px;
+  height: 60px;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto 0.5rem auto;
+}
+
+.preview-logo span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.a4-preview-footer {
+  background: #f8f9fa;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Actions PDF */
+.pdf-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pdf-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.pdf-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.pdf-btn-download {
+  background: #27ae60;
+}
+
+.pdf-btn-download:hover {
+  background: #219653;
+}
+
+.pdf-note {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Côté Description du projet */
+.sd-desc-side {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project-description h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #3498db;
+  font-size: 1.6rem;
+}
+
+/* Métadonnées du projet */
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.meta-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.meta-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.meta-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Section ODD */
+.project-odd {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.project-odd h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.odd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.odd-item-desc {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid;
+}
+
+.odd-number-desc {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.odd-item-desc div {
+  flex: 1;
+}
+
+.odd-item-desc strong {
+  display: block;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.odd-item-desc p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Impact */
+.project-impact {
+  margin-bottom: 2rem;
+}
+
+.project-impact h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.impact-item {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+  transform: translateY(-3px);
+  border-color: #3498db;
+}
+
+.impact-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 0.3rem;
+}
+
+.impact-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Contexte */
+.project-context {
+  padding: 1.5rem;
+  background: #e8f4fc;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.project-context h4 {
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.project-context p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sd-layout {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sustainable-development {
+    padding: 2rem 1rem;
+  }
+  
+  .sd-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .sd-pdf-side {
+    position: static;
+  }
+  
+  .pdf-actions {
+    flex-direction: column;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-meta {
+    grid-template-columns: 1fr;
+  }
+  
+  .sd-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .project-description h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Styles pour l'image infographique */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-image:hover {
+  transform: scale(1.02);
+}
+
+/* Pour garder le layout existant */
+.sd-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.sd-pdf-side {
+  position: sticky;
+  top: 2rem;
+}
+
+.pdf-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.pdf-preview {
+  margin-bottom: 1.5rem;
+}
+
+.pdf-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pdf-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pdf-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.pdf-btn-download {
+  background: #27ae60;
+}
+
+.pdf-btn-download:hover {
+  background: #219653;
+}
+
+.pdf-note {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sd-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .sd-pdf-side {
+    position: static;
+  }
+  
+  .pdf-actions {
+    flex-direction: column;
+  }
 }
 
 
