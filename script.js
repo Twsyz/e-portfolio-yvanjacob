@@ -119,9 +119,9 @@ const translations = {
     pourquoi_texte: "Pourquoi ce domaine ? Ayant fait de la voile durant mes vacances quand j'étais petit, j'ai toujours été impressionné par les bateaux à voiles. J'ai aussi vu d'immenses et de puissants navires lors des fêtes maritimes de Brest à trois reprises. C'est leur architecture, leur fonctionnement, mais aussi la manière dont ils sont conçus qui m'ont toujours fasciné. C'est pourquoi j'ai décidé de me spécialiser dans ce domaine lors de ma troisième année d'école d'ingénieur.",
 
     video_title: "Vidéo de présentation pour CAM",
-    presentation_video: "Voici une vidéo de présentation de mon parcours et de mes projets grâce aux interviews",
+    presentation_video: "Voici une vidéo de présentation de mon parcours et de mes projets suite à ces interviews",
 
-    projet_domaine: "Domaine : Architecture navale, R&D, efficacité énergétique et rendement des bateaux à voile",
+    projet_domaine: "Domaine : Architecture navale, R&D, efficacité énergétique et rendement des bateaux à voiles",
 
     person1_name: "Personne interviewée 1 : Clément Devouassoud",
     person1_age: "Âge : 26 ans",
