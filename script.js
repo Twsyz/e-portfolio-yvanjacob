@@ -26,11 +26,11 @@ const translations = {
     filter_echange_label: "Échange scolaire",
     // 🇫🇷 France
     exp_fr_title: "🇫🇷 France — Travail d'été",
-    exp_fr_text: "Durant l'été 2024, j'ai décidé de travailler 6 semaines dans une usine, sur chaîne de production. Cela m'a permis d'avoir une première approche du monde du travail mais aussi de mieux comprendre les compétences et les enjeux d'un ouvrier. J'ai plus précisément découvert tout un écosystème avec des collègues heureux de travailler en équipe.",
+    exp_fr_text: "Durant l'été 2024, j'ai décidé de travailler 6 semaines dans une usine, sur chaîne de production. Cela m'a permis d'avoir une première approche du monde du travail mais aussi de mieux comprendre les compétences attendues d'un ouvrier et les enjeux du métier. J'ai plus précisément découvert tout un écosystème avec des collègues heureux de travailler en équipe.",
 
     // 🇹🇿 Tanzanie
     exp_tz_title: "🇹🇿 Tanzanie — Vacances",
-    exp_tz_text: "En 2019, j'ai effectué un voyage en famille en Tanzanie, où nous avons pu découvrir la faune et la culture locale. En effet, malgré les différences entre la culture Maasaï et la notre, nous avons pu rencontrer des membres de tribu et partager des moments de découvertes notamment de leurs nombreux artisinats et méthodes de vies dont la chasse. J'ai eu la chance de passer du safari dans les parcs naturels, à la culture très différente de Zanzibar.",
+    exp_tz_text: "En 2019, j'ai effectué un voyage en famille en Tanzanie, où nous avons pu découvrir la faune et la culture locales. En effet, malgré les différences entre la culture Maasaï et la nôtre, nous avons pu rencontrer des membres de tribus et partager des moments de découvertes notamment de leurs nombreux artisinats et méthodes de vies dont la chasse. J'ai eu la chance de passer du safari dans les parcs naturels, à la culture très différente de Zanzibar.",
     pres_tz: "Petite présentation de mon voyage en Tanzanie (PDF)",
 
     // 🇨🇳 Chine
@@ -105,8 +105,8 @@ const translations = {
     ingenieur_premier_exp_text: "Durant le covid 19, et le confinement, j'ai appris les bases du javascript mais aussi les bases du développement web grâce à des cours en ligne ou bien des mentors qui répondaient à mes questions. C'est grâce à ces bases que j'ai pu développer entièrement ce site présentant mon e-portfolio.",
     ingenieu_TIPE1_title: "Mon premier projet alliant connaissances théoriques et pratiques",
     ingenieur_TIPE1_exp_text: "Mes deux premières années de CPGE m'ont poussé à développer mon premier projet concret. Une cible d'airsoft, moyennement aboutie, qui reposait sur des automatismes. Celui-ci m'a permis d'acquérir de grandes connaissances dans le domaine de la physique, mais aussi en programmation. En effet, toute la partie automatisation était faite en exclusivité grâce à Arduino.",
-    ingenieu_TIPE2_title: "Mon deuxième projet, bien plus abouti, où la théorie et l'expérience s'entre-croisent",
-    ingenieur_TIPE2_exp_text: "Mais c'est en réalité mon deuxième TIPE dont je suis le plus fier. J'ai été très investi et j'ai travaillé avec un préparateur du laboratoire de mon lycée: Vincent STEINMETZ. Un homme plein de ressources qui m'a appris bien plus en un an que ce que j'avais appris seul en deux. J'ai construit, automatisé, calculé des rendements et travaillé sur la thermodynamique d'une climatisation adiabatique directe. J'ai appris la soudure, l'électronique, l'impression 3D et bien d'autres.",
+    ingenieu_TIPE2_title: "Mon deuxième projet, bien plus abouti, où la théorie et l'expérience s'entrecroisent",
+    ingenieur_TIPE2_exp_text: "Mais c'est en réalité mon deuxième TIPE dont je suis le plus fier. J'ai été très investi et j'ai travaillé avec un préparateur du laboratoire de mon lycée: Vincent STEINMETZ. Un homme plein de ressources qui m'a appris bien plus en un an que ce que j'avais appris seul en deux. J'ai construit, automatisé, calculé des rendements et travaillé sur la thermodynamique d'une climatisation adiabatique directe. J'ai appris la soudure, l'électronique, l'impression 3D et bien d'autres techniques.",
     ingenieur_year1_title: "Première année",
     ingenieur_year1_text: "Découverte des bases scientifiques et techniques en mécanique des fluides, mathématiques et informatique.",
     ingenieur_year2_title: "Deuxième année",
@@ -150,7 +150,7 @@ const translations = {
     photo_texte: "Ce qui me plait dans la photographie reste d'immortaliser des moments, des paysages, des instants de vie.",
 
     cuisine_title: "Cuisine",
-    cuisine_texte: "J'ai l'habitude de cuisinier pour mes proches aux grandes occasions: nouvel an, Noël. Je préfère cuisinier des plats salés mais je fais aussi une très bonne tarte aux noix caramel!",
+    cuisine_texte: "J'ai l'habitude de cuisiner pour mes proches aux grandes occasions: nouvel an, Noël. Je préfère cuisiner des plats salés mais je fais aussi une très bonne tarte aux noix caramel!",
 
     impression_title: "Conception et Impression 3D",
     impression_texte: "J'ai commencé l'impression 3D en 2023 avec une Creality Ender 3, puis j'ai continué avec une Kingroon KP5L. J'ai aimé la possibilité de concrétiser mes modélisations grâce à cette révolution technologique.",
@@ -159,13 +159,13 @@ const translations = {
     apnee_texte: "Etant asthmatique, je me suis dirigé vers l'apnée en 2020. Cela m'a permis de découvrir les fonds marins mais aussi de me surpasser physiquement et mentalement.",
 
     basket_title: "Basket",
-    basket_texte: "J'ai commencé le basket en 2012, j'ai joué en club jusqu'en 2021 lorsque je m'entranaîs avec une équipe de N2: les Canonniers de Metz mais ne parcitipais pas aux matchs. J'aime ce sport pour son esprit d'équipe et son intensité. En effet, j'étais très investi dans mon premier club (Jura Dolois Basket) où je passais l'entièreté de mes samedis à arbitrer et faire la table de match.",
+    basket_texte: "J'ai commencé le basket en 2012, j'ai joué en club jusqu'en 2021 lorsque je m'entraînais avec une équipe de N2, les Canonniers de Metz, mais je ne participais pas aux matchs. J'aime ce sport pour son esprit d'équipe et son intensité. En effet, j'étais très investi dans mon premier club (Jura Dolois Basket) où je passais l'entièreté de mes samedis à arbitrer et faire la table de match.",
 
     tennis_title: "Tennis",
-    tennis_texte: "A l'âge de 4ans, je tapais déjà ma première balle. J'ai joué en club mais n'ai jamais fait beaucoup de compétition. J'aime ce sport pour la concentration et l'agilité qu'il demande.",
+    tennis_texte: "A l'âge de 4 ans, je tapais déjà ma première balle. J'ai joué en club mais n'ai jamais fait beaucoup de compétition. J'aime ce sport pour la concentration et l'agilité qu'il demande.",
 
     percussions_title: "Percussions",
-    percussions_texte: "Ayant été élevé dans une famille de musiciens, j'ai peiné à trouver un instrument qui me correspondait, j'ai trouvé les percussions en passant par la trompette, le saxophone et d'autres. J'ai particulièrement apprécié mes années au conservatoire à rayonnement départemental de Dole lorsque beaucoup d'évènements étaient organisés: batucadas, concerts du conservatoire et ce, dans des endroits variés.",
+    percussions_texte: "Ayant été élevé dans une famille de musiciens, j'ai peiné à trouver un instrument qui me corresponde. J'ai trouvé les percussions en passant par la trompette et le saxophone. J'ai particulièrement apprécié mes années au conservatoire à rayonnement départemental de Dole car beaucoup d'évènements étaient organisés: batucadas, concerts du conservatoire et ce, dans des endroits variés.",
 
     sd_title: "Développement Durable & ODD",
     sd_subtitle: "Propositions d'engagement civique alignées avec les ODD de l'UNESCO",
@@ -354,7 +354,7 @@ const translations = {
     tennis_texte: "At the age of 4, I hit my first ball. I played in a club but never competed much. I love this sport for the concentration and agility it requires.",
 
     percussions_title: "Percussion",
-    percussions_texte: "Raised in a family of musicians, I sought an instrument that suited me and found percussion after trying trumpet, saxophone, and others. I particularly enjoyed my years at the Dole Regional Conservatory, where many events were organized: batucadas, conservatory concerts, and more.",
+    percussions_texte: "Raised in a family of musicians, I sought an instrument that suited me and found percussion after trying trumpet, saxophone, and others. I particularly enjoyed my years at the Dole Regional Conservatory, because many events were organized: batucadas, conservatory concerts, and more.",
 
     sd_title: "Sustainable Development & SDGs",
     sd_subtitle: "Civic engagement proposals aligned with UNESCO Sustainable Development Goals",
@@ -544,7 +544,7 @@ const translations = {
     tennis_texte: "A la edad de 4 años, golpeé mi primera pelota. Jugué en un club, pero nunca competí mucho. Me encanta este deporte por la concentración y agilidad que requiere.",
 
     percussions_title: "Percusión",
-    percussions_texte: "Criado en una familia de músicos, busqué un instrumento que me conveniera y encontré la percusión después de probar la trompeta, el saxofón y otros. Disfruté particularmente mis años en el Conservatorio Regional de Dole, donde se organizaron muchos eventos: batucadas, conciertos del conservatorio y más.",
+    percussions_texte: "Criado en una familia de músicos, busqué un instrumento que me conveniera y encontré la percusión después de probar la trompeta, el saxofón y otros. Disfruté particularmente mis años en el Conservatorio Regional de Dole, porque se organizaron muchos eventos: batucadas, conciertos del conservatorio y más.",
 
 
     sd_title: "Desarrollo Sostenible & ODS",
