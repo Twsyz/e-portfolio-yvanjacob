@@ -59,16 +59,16 @@ const translations = {
 
     // === Réfléxion ===
     title_reflex: "Réflexion personnelle",
-    exp_reflex: "Ces expériences à l’étranger m’ont permis de développer bien plus que de simples compétences linguistiques. Elles m’ont ouvert à de nouvelles cultures, appris à m’adapter à des environnements inconnus et renforcé ma curiosité scientifique et humaine. Chaque voyage a contribué à construire ma vision du monde et à nourrir mon ambition d’ingénieur ouvert sur l’international.",
+    exp_reflex: "Ces expériences à l’étranger m’ont permis de développer bien plus que de simples compétences linguistiques. Elles m’ont ouvert à de nouvelles cultures, appris à m’adapter à des environnements inconnus et ont renforcé ma curiosité scientifique et humaine. Chaque voyage a contribué à construire ma vision du monde et à nourrir mon ambition d’ingénieur ouvert sur l’international.",
 
     exp_culture_title: "🌍Ouverture culturelle",
-    exp_culture_text: "Comprendre et m’intégrer à des environnements variés m’a appris la tolérance, la patience et l’écoute active.",
+    exp_culture_text: "Comprendre et m’intégrer à des environnements variés m’ont appris la tolérance, la patience et l’écoute active.",
 
     exp_adapt_title: "🤝 Adaptabilité",
     exp_adapt_text: "Chaque pays m’a confronté à des défis uniques, renforçant ma capacité à m’adapter rapidement à de nouveaux contextes.",
 
     exp_vis_title: "🚀Mobilités",
-    exp_vis_text: "Ces expériences nourrissent mon envie de travailler sur des projets à portée mondiale, c'est pourquoi j'aimerai faire un double-diplôme (EPFL, UPM)",
+    exp_vis_text: "Ces expériences nourrissent mon envie de travailler sur des projets à portée mondiale, c'est pourquoi j'aimerais faire un double-diplôme (EPFL, UPM)",
 
     // === Engagement civic ===
     engagement_title: "Engagement civique",
@@ -116,7 +116,7 @@ const translations = {
 
     // == Projets professionnels ==
     projet_texte: "Architecture navale",
-    pourquoi_texte: "Pourquoi ce domaine ? Ayant fait de la voile durant mes vacances quand j'étais petit, j'ai toujours était impressioné par les bateaux à voile. J'ai aussi vu d'immenses et de puissants navires lors des fêtes maritimes de Brest à trois reprises. C'est leur architecture, leur fonctionnement, mais aussi la manière dont ils sont conçus qui m'ont toujours fasciné. C'est pourquoi j'ai décidé de me spécialiser dans ce domaine lors de ma troisième année d'école d'ingénieur.",
+    pourquoi_texte: "Pourquoi ce domaine ? Ayant fait de la voile durant mes vacances quand j'étais petit, j'ai toujours été impressionné par les bateaux à voiles. J'ai aussi vu d'immenses et de puissants navires lors des fêtes maritimes de Brest à trois reprises. C'est leur architecture, leur fonctionnement, mais aussi la manière dont ils sont conçus qui m'ont toujours fasciné. C'est pourquoi j'ai décidé de me spécialiser dans ce domaine lors de ma troisième année d'école d'ingénieur.",
 
     video_title: "Vidéo de présentation pour CAM",
     presentation_video: "Voici une vidéo de présentation de mon parcours et de mes projets grâce aux interviews",
@@ -125,7 +125,7 @@ const translations = {
 
     person1_name: "Personne interviewée 1 : Clément Devouassoud",
     person1_age: "Âge : 26 ans",
-    person1_job: "Métier : ",
+    person1_job: "Métier : Dessinateur industriel",
     person1_location: "Lieu : Cluses, France",
 
     person2_name: "Personne interviewée 2 : Baptiste Renard",
