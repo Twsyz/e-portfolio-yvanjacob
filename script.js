@@ -18,7 +18,7 @@ const translations = {
     menu_exp: "Expériences professionnelles, internationales",
     menu_civic: "Expériences civiques",
     menu_cv: "CV",
-    intro_text: "Moi, c'est Yvan JACOB, je suis étudiant à l'ENSEEIHT (Mécanique des fluides – Eau – Environnement) en première année. Vous pouvez découvrir ici mon parcours, mes expériences mais aussi mon projet professionnel. Si vous avez une quelconque question, vous pouvez passer par le formulaire de contact.",
+    intro_text: "Moi, c'est Yvan JACOB, je suis étudiant à l'ENSEEIHT (Mécanique des fluides – Eau – Environnement) en première année. Vous pouvez découvrir ici mon parcours et mes différentes expériences . Si vous avez une quelconque question, vous pouvez passer par le formulaire de contact.",
 
     filter_travail_label: "Travail",
     filter_vacances_label: "Vacances",
@@ -211,7 +211,7 @@ const translations = {
     menu_exp: "Mobility",
     menu_civic: "Civic Engagement",
     menu_cv: "Resume",
-    intro_text: "I'm Yvan JACOB, a first-year student at ENSEEIHT (Fluid Mechanics - Water - Environment). Here you can discover my background, experiences, and professional project. If you have any questions, feel free to use the contact form.",
+    intro_text: "I'm Yvan JACOB, a first-year student at ENSEEIHT (Fluid Mechanics - Water - Environment). Here you can discover my background and experiences. If you have any questions, feel free to use the contact form.",
 
     filter_travail_label: "Work",
     filter_vacances_label: "Vacation",
@@ -402,7 +402,7 @@ const translations = {
     menu_civic: "Compromiso cívico",
     menu_cv: "Currículum",
     
-    intro_text: "Soy Yvan JACOB, un estudiante de primer año en ENSEEIHT (Mecánica de Fluidos - Agua - Medio Ambiente). Aquí puedes descubrir mi formación, experiencias y proyecto profesional. Si tienes alguna pregunta, no dudes en utilizar el formulario de contacto.",
+    intro_text: "Soy Yvan JACOB, un estudiante de primer año en ENSEEIHT (Mecánica de Fluidos - Agua - Medio Ambiente). Aquí puedes descubrir mi formación y experiencias. Si tienes alguna pregunta, no dudes en utilizar el formulario de contacto.",
 
     filter_travail_label: "Trabajo",
     filter_vacances_label: "Vacaciones",
@@ -593,7 +593,7 @@ const translations = {
     menu_exp: "流动性",
     menu_civic: "公民参与",
     menu_cv: "简历",
-    intro_text: "我是Yvan JACOB，ENSEEIHT（流体力学-水-环境）的一年级学生。在这里，您可以了解我的背景、经验和职业规划。如果您有任何问题，请随时使用联系表格。",
+    intro_text: "我是Yvan JACOB，ENSEEIHT（流体力学 - 水 - 环境）的一年级学生。在这里，你可以发现我的教育和经历。如果你有任何问题，请随时使用联系表格。",
 
     filter_travail_label: "工作",
     filter_vacances_label: "假期",
