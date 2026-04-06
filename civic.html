@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -260,10 +260,7 @@
     <div class="footer-left">
       <p>&copy; 2025 Yvan JACOB. Tous droits réservés.</p>
       <div class="footer-links">
-        <div id="lockIcon" class="lock-icon" role="button" aria-label="Accès protégé">
-          <img id="lockImage" src="images/lock-closed.png" alt="Cadenas" width="30">
-        </div>
-        <a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
+<a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
         <a href="#" class="open-modal" data-modal="privacyModal">Politique de confidentialité</a>
         <a href="#" class="open-modal" data-modal="contactModal">Contact</a>
       </div>
@@ -294,7 +291,7 @@
         <li>Téléphone : <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
         <li>Hébergeur : Privé</li>
       </ul>
-      <p><span class="sensitive" data-value="" data-mask="Pour accéder aux informations sensibles, veuillez entrer le mot de passe ou me contacter directement grâce au formulaire prévu à cet effet."></span></p>
+      <p><span class="sensitive" data-value="" data-mask="Informations de contact disponibles ci-dessus."></span></p>
     </div>
   </div>
 
@@ -355,26 +352,6 @@
       </form>
     </div>
   </div>
-
-
-  <!-- POPUP MOT DE PASSE -->
-  <div id="passwordModal" class="access-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="access-modal__content">
-      <button class="access-modal__close" aria-label="Fermer">&times;</button>
-      <h2>Accès aux informations sensibles</h2>
-      <p>Mot de passe</p>
-
-      <input type="password" id="passwordInput" placeholder="Mot de passe">
-
-      <div class="access-modal__actions">
-        <button id="submitPassword" class="btn" type="button">Valider</button>
-        <button id="skipPassword" class="btn btn--ghost" type="button">Passer</button>
-      </div>
-
-      <p id="passwordError" class="access-error" style="display:none;">Mot de passe incorrect</p>
-    </div>
-  </div>
-
 </body>
 </html>
 

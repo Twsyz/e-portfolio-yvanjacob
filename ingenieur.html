@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -42,6 +42,45 @@
 
   <!-- ======= CONTENU PRINCIPAL ======= -->
   <main class="ingenieur-container">
+    <section class="profile-hero">
+      <div class="profile-hero__content">
+        <p class="profile-hero__eyebrow" data-i18n="ingenieur_hero_eyebrow"></p>
+        <h2 data-i18n="ingenieur_hero_title"></h2>
+        <p class="profile-hero__summary" data-i18n="ingenieur_hero_text"></p>
+
+        <div class="profile-hero__cta">
+          <a href="cv.html" class="btn profile-cta" data-i18n="ingenieur_hero_cta_cv"></a>
+          <a href="#contactModal" class="btn btn--ghost open-modal profile-cta-ghost" data-modal="contactModal" data-i18n="ingenieur_hero_cta_contact"></a>
+        </div>
+
+        <ul class="profile-hero__tags">
+          <li data-i18n="ingenieur_tag_1"></li>
+          <li data-i18n="ingenieur_tag_2"></li>
+          <li data-i18n="ingenieur_tag_3"></li>
+          <li data-i18n="ingenieur_tag_4"></li>
+        </ul>
+      </div>
+
+      <div class="profile-kpis" aria-label="Profil en chiffres">
+        <article class="profile-kpi-card">
+          <p class="profile-kpi-card__value" data-i18n="ingenieur_kpi_1_value"></p>
+          <p class="profile-kpi-card__label" data-i18n="ingenieur_kpi_1_label"></p>
+        </article>
+        <article class="profile-kpi-card">
+          <p class="profile-kpi-card__value" data-i18n="ingenieur_kpi_2_value"></p>
+          <p class="profile-kpi-card__label" data-i18n="ingenieur_kpi_2_label"></p>
+        </article>
+        <article class="profile-kpi-card">
+          <p class="profile-kpi-card__value" data-i18n="ingenieur_kpi_3_value"></p>
+          <p class="profile-kpi-card__label" data-i18n="ingenieur_kpi_3_label"></p>
+        </article>
+        <article class="profile-kpi-card">
+          <p class="profile-kpi-card__value" data-i18n="ingenieur_kpi_4_value"></p>
+          <p class="profile-kpi-card__label" data-i18n="ingenieur_kpi_4_label"></p>
+        </article>
+      </div>
+    </section>
+
     <section class="intro-ingenieur">
       <h2 data-i18n="ingenieur_intro_title"></h2>
       <p data-i18n="ingenieur_intro_text"></p>
@@ -65,12 +104,11 @@
         <div class="pdf-support">
           <iframe src="TIPE/TIPE_2.pdf" title="TIPE 2" frameborder="0" loading="lazy"></iframe>
         </div>
-        </div>
+      </div>
       <div class="timeline-item">
         <h3 data-i18n="ingenieur_toolhead_title"></h3>
         <p data-i18n="ingenieur_toolhead_text"></p>
         <img src="images/toolhead.png" alt="Toolhead 3D Printer" class="ingenieur-img">
-      </div>
       </div>
       <div class="timeline-item">
         <h3 data-i18n="ingenieur_3Dprintshop_title"></h3>
@@ -117,10 +155,7 @@
     <div class="footer-left">
       <p>&copy; 2025 Yvan JACOB. Tous droits réservés.</p>
       <div class="footer-links">
-        <div id="lockIcon" class="lock-icon" role="button" aria-label="Accès protégé">
-          <img id="lockImage" src="images/lock-closed.png" alt="Cadenas" width="30">
-        </div>
-        <a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
+<a href="#" class="open-modal" data-modal="mentionsModal">Mentions légales</a>
         <a href="#" class="open-modal" data-modal="privacyModal">Politique de confidentialité</a>
         <a href="#" class="open-modal" data-modal="contactModal">Contact</a>
       </div>
@@ -151,7 +186,7 @@
         <li>Téléphone : <span class="sensitive" data-value="+33 6 21 72 57 96" data-mask="+33 XX XX XX XX">+33 XX XX XX XX</span></li>
         <li>Hébergeur : Privé</li>
       </ul>
-      <p><span class="sensitive" data-value="" data-mask="Pour accéder aux informations sensibles, veuillez entrer le mot de passe ou me contacter directement grâce au formulaire prévu à cet effet."></span></p>
+      <p><span class="sensitive" data-value="" data-mask="Informations de contact disponibles ci-dessus."></span></p>
     </div>
   </div>
 
@@ -212,24 +247,5 @@
       </form>
     </div>
   </div>
-
-  <!-- POPUP MOT DE PASSE -->
-  <div id="passwordModal" class="access-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="access-modal__content">
-      <button class="access-modal__close" aria-label="Fermer">&times;</button>
-      <h2>Accès aux informations sensibles</h2>
-      <p>Mot de passe</p>
-
-      <input type="password" id="passwordInput" placeholder="Mot de passe">
-
-      <div class="access-modal__actions">
-        <button id="submitPassword" class="btn" type="button">Valider</button>
-        <button id="skipPassword" class="btn btn--ghost" type="button">Passer</button>
-      </div>
-
-      <p id="passwordError" class="access-error" style="display:none;">Mot de passe incorrect</p>
-    </div>
-  </div>
-
 </body>
 </html>

@@ -98,6 +98,23 @@ const translations = {
     skill_delegate_3: "Orientation",
 
     // === Parcours ingénieur ===
+    ingenieur_hero_eyebrow: "Profil",
+    ingenieur_hero_title: "Eleve ingenieur en mecanique des fluides, oriente simulation numerique et developpement de solutions concretes",
+    ingenieur_hero_text: "Je combine approche scientifique, execution terrain et autonomie projet pour concevoir des solutions fiables, mesurables et deployables.",
+    ingenieur_hero_cta_cv: "Voir mon CV",
+    ingenieur_hero_cta_contact: "Me contacter",
+    ingenieur_tag_1: "Mecanique des fluides",
+    ingenieur_tag_2: "CFD et calcul numerique",
+    ingenieur_tag_3: "Conception et prototypage 3D",
+    ingenieur_tag_4: "Gestion de projet et communication",
+    ingenieur_kpi_1_value: "10+",
+    ingenieur_kpi_1_label: "Projets techniques et academiques",
+    ingenieur_kpi_2_value: "4",
+    ingenieur_kpi_2_label: "Langues disponibles sur le portfolio",
+    ingenieur_kpi_3_value: "3",
+    ingenieur_kpi_3_label: "Piliers competences: simulation, code, conception",
+    ingenieur_kpi_4_value: "1",
+    ingenieur_kpi_4_label: "Experience en Junior-Entreprise",
     ingenieur_intro_title: "Mon parcours d’ingénieur",
     ingenieur_intro_text: "Ici est décrit mon premier contact avec le monde scientifique, jusqu'aujourd'hui où je suis en première année d'école d'ingénieur.",
     ingenieu_premier_exp_title: "Premier contact avec le monde scientifique",
@@ -303,6 +320,23 @@ const translations = {
     skill_delegate_3: "Representation",
 
     // === Engineering Path ===
+    ingenieur_hero_eyebrow: "Profile",
+    ingenieur_hero_title: "Engineering student in fluid mechanics focused on numerical simulation and practical solution delivery",
+    ingenieur_hero_text: "I combine scientific rigor, hands-on execution and project ownership to deliver reliable, measurable and deployable solutions.",
+    ingenieur_hero_cta_cv: "View Resume",
+    ingenieur_hero_cta_contact: "Contact Me",
+    ingenieur_tag_1: "Fluid mechanics",
+    ingenieur_tag_2: "CFD and numerical methods",
+    ingenieur_tag_3: "3D design and prototyping",
+    ingenieur_tag_4: "Project management and communication",
+    ingenieur_kpi_1_value: "10+",
+    ingenieur_kpi_1_label: "Technical and academic projects",
+    ingenieur_kpi_2_value: "4",
+    ingenieur_kpi_2_label: "Portfolio languages available",
+    ingenieur_kpi_3_value: "3",
+    ingenieur_kpi_3_label: "Core pillars: simulation, code, design",
+    ingenieur_kpi_4_value: "1",
+    ingenieur_kpi_4_label: "Junior Enterprise experience",
     ingenieur_intro_title: "My Engineering Path",
     ingenieur_intro_text: "Here is a description of my first contact with the scientific world, leading up to today where I am in my first year of engineering school.",
     ingenieu_premier_exp_title: "First Contact with the Scientific World",
@@ -504,6 +538,23 @@ const translations = {
     skill_delegate_3: "Representación",
 
     // === Engineering Path ===
+    ingenieur_hero_eyebrow: "Perfil",
+    ingenieur_hero_title: "Estudiante de ingenieria en mecanica de fluidos orientado a simulacion numerica y soluciones aplicadas",
+    ingenieur_hero_text: "Combino rigor cientifico, ejecucion practica y autonomia en proyectos para entregar soluciones fiables, medibles e implementables.",
+    ingenieur_hero_cta_cv: "Ver CV",
+    ingenieur_hero_cta_contact: "Contactarme",
+    ingenieur_tag_1: "Mecanica de fluidos",
+    ingenieur_tag_2: "CFD y metodos numericos",
+    ingenieur_tag_3: "Diseno y prototipado 3D",
+    ingenieur_tag_4: "Gestion de proyectos y comunicacion",
+    ingenieur_kpi_1_value: "10+",
+    ingenieur_kpi_1_label: "Proyectos tecnicos y academicos",
+    ingenieur_kpi_2_value: "4",
+    ingenieur_kpi_2_label: "Idiomas disponibles en el portfolio",
+    ingenieur_kpi_3_value: "3",
+    ingenieur_kpi_3_label: "Pilares clave: simulacion, codigo, diseno",
+    ingenieur_kpi_4_value: "1",
+    ingenieur_kpi_4_label: "Experiencia en Junior Empresa",
     ingenieur_intro_title: "Mi Trayectoria de Ingeniería",
     ingenieur_intro_text: "Aquí hay una descripción de mi primer contacto con el mundo científico, que me llevó hasta hoy, donde estoy en mi primer año de escuela de ingeniería.",
     ingenieu_premier_exp_title: "Primer Contacto con el Mundo Científico",
@@ -706,6 +757,23 @@ const translations = {
 
 
     // === Engineering Path ===
+    ingenieur_hero_eyebrow: "个人简介",
+    ingenieur_hero_title: "流体力学方向工程学生，专注数值模拟与可落地解决方案",
+    ingenieur_hero_text: "我结合科学严谨性、实践执行力和项目自主性，交付可靠、可量化、可部署的解决方案。",
+    ingenieur_hero_cta_cv: "查看简历",
+    ingenieur_hero_cta_contact: "联系我",
+    ingenieur_tag_1: "流体力学",
+    ingenieur_tag_2: "CFD与数值方法",
+    ingenieur_tag_3: "3D设计与原型",
+    ingenieur_tag_4: "项目管理与沟通",
+    ingenieur_kpi_1_value: "10+",
+    ingenieur_kpi_1_label: "技术与学术项目",
+    ingenieur_kpi_2_value: "4",
+    ingenieur_kpi_2_label: "作品集可用语言",
+    ingenieur_kpi_3_value: "3",
+    ingenieur_kpi_3_label: "核心支柱：仿真、代码、设计",
+    ingenieur_kpi_4_value: "1",
+    ingenieur_kpi_4_label: "Junior-Entreprise经历",
     ingenieur_intro_title: "我的工程师之路",
     ingenieur_intro_text: "以下是我与科学世界的首次接触的描述，这段经历一直持续到今天，我现在是一名工程学院的一年级学生。",
     ingenieu_premier_exp_title: "与科学世界的首次接触",
@@ -844,13 +912,9 @@ function setLanguage(lang) {
   if (cvFrame) {
     // Mettre à jour l'attribut data-src avec le bon PDF selon la langue
     cvFrame.dataset.src = cvFiles[lang] || cvFiles.fr;
-    
-    // Si déverrouillé, charger directement le vrai CV
-    if (localStorage.getItem("isUnlocked") === "true") {
-      cvFrame.src = cvFrame.dataset.src;
-    } else {
-      cvFrame.src = "cv/blank.pdf";
-    }
+
+    // Verrouillage supprimé: toujours charger le CV correspondant à la langue
+    cvFrame.src = cvFrame.dataset.src;
   }
 
   // Traduire les labels des filtres
@@ -870,6 +934,14 @@ function setLanguage(lang) {
 
   document.title = t.title || document.title;
   localStorage.setItem("preferredLang", lang);
+}
+
+function revealSensitiveData() {
+  document.querySelectorAll(".sensitive").forEach(el => {
+    if (el.dataset.value !== undefined) {
+      el.textContent = el.dataset.value;
+    }
+  });
 }
 
 // ======================
@@ -915,11 +987,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     lastModifiedEl.textContent = date.toLocaleDateString('fr-FR', options);
   }
-  if (localStorage.getItem("isUnlocked") === "true") {
-    showSensitive(); // déjà déverrouillé
-  } else {
-    hideSensitive(); // sinon masqué
-  }
+
+  // Verrouillage supprimé: afficher directement les infos sensibles
+  revealSensitiveData();
 });
 
 // ======================
@@ -1112,135 +1182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(card);
   });
 });
-
-// ======================
-// Mot de passe
-// ======================
-
-document.addEventListener("DOMContentLoaded", () => {
-  const lockIcon = document.getElementById("lockIcon");
-  const lockImage = document.getElementById("lockImage");
-  const passwordModal = document.getElementById("passwordModal");
-  const passwordInput = document.getElementById("passwordInput");
-  const submitPassword = document.getElementById("submitPassword");
-  const skipPassword = document.getElementById("skipPassword");
-  const passwordError = document.getElementById("passwordError");
-  const closeButtons = document.querySelectorAll(".close, .access-modal__close");
-  const sensitiveElements = document.querySelectorAll(".sensitive");
-  const cvFrame = document.getElementById("cvFrame"); // iframe du CV
-
-  const correctPassword = "MDPpourCAM2025-eportfolioYvAnJaCOB31400";
-  //const correctPassword = "ca";
-
-  // --- FUNCTIONS ---
-  const showSensitive = () => {
-    sensitiveElements.forEach(el => {
-      el.style.transition = "opacity 0.5s";
-      el.style.opacity = 0;
-      setTimeout(() => {
-        el.textContent = el.dataset.value;
-        el.style.opacity = 1;
-      }, 300);
-    });
-    lockImage.src = "images/lock-open.png";
-    lockIcon.style.transform = "rotate(20deg)";
-    setTimeout(() => lockIcon.style.transform = "rotate(0deg)", 200);
-    localStorage.setItem("isUnlocked", "true");
-
-    // Charger le vrai PDF avec la langue actuelle
-    const cvFrame = document.getElementById("cvFrame");
-    if (cvFrame) {
-      const currentLang = localStorage.getItem("preferredLang") || "fr";
-      cvFrame.src = cvFiles[currentLang] || cvFiles.fr;
-    }
-  };
-
-  const hideSensitive = () => {
-    sensitiveElements.forEach(el => {
-      el.style.transition = "opacity 0.5s";
-      el.style.opacity = 0;
-      setTimeout(() => {
-        el.textContent = el.dataset.mask || el.textContent.replace(/./g, "x");
-        el.style.opacity = 1;
-      }, 300);
-    });
-    lockImage.src = "images/lock-closed.png";
-    lockIcon.style.transform = "rotate(-20deg)";
-    setTimeout(() => lockIcon.style.transform = "rotate(0deg)", 200);
-    localStorage.removeItem("isUnlocked");
-
-    // Remet la page blanche dans l'iframe
-    const cvFrame = document.getElementById("cvFrame");
-    if (cvFrame) cvFrame.src = "cv/blank.pdf";
-  };
-
-  const openModal = modal => {
-    modal.style.display = "flex";
-    modal.setAttribute("aria-hidden", "false");
-    modal.style.animation = "fadeInScale 0.3s forwards";
-  };
-
-  const closeModal = modal => {
-    modal.style.animation = "fadeOutScale 0.3s forwards";
-    setTimeout(() => {
-      modal.style.display = "none";
-      modal.setAttribute("aria-hidden", "true");
-    }, 300);
-  };
-
-  function validatePassword() {
-    if (passwordInput.value === correctPassword) {
-      showSensitive();
-      closeModal(passwordModal);
-    } else {
-      passwordError.style.display = "block";
-      passwordError.style.animation = "shake 0.3s";
-      setTimeout(() => passwordError.style.animation = "", 300);
-      passwordInput.value = "";
-      passwordInput.focus();
-    }
-  }
-
-  // --- EVENTS ---
-  lockIcon.addEventListener("click", () => {
-    if (localStorage.getItem("isUnlocked") === "true") {
-      hideSensitive();
-      return;
-    }
-    openModal(passwordModal);
-    passwordInput.value = "";
-    passwordError.style.display = "none";
-    passwordInput.focus();
-  });
-
-  closeButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const modal = btn.closest(".modal, .access-modal");
-      closeModal(modal);
-    });
-  });
-
-  submitPassword.addEventListener("click", validatePassword);
-
-  passwordInput.addEventListener("keypress", e => {
-    if (e.key === "Enter") validatePassword();
-  });
-
-  skipPassword.addEventListener("click", () => {
-    hideSensitive();
-    closeModal(passwordModal);
-  });
-
-  // --- INITIALISATION ---
-  if (localStorage.getItem("isUnlocked") === "true") {
-  showSensitive(); // déjà déverrouillé
-  if (cvFrame) cvFrame.src = cvFrame.dataset.src;
-  } else {
-  hideSensitive(); // sinon masqué
-  if (cvFrame) cvFrame.src = "cv/blank.pdf";
-  }
-});
-
 
 // ======================
 // Gestion du menu mobile
