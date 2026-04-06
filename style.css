@@ -2949,3 +2949,284 @@ h1, h2, h3, .logo a {
     }
 }
 
+/* ======= THEME OVERRIDE: BLEU PRO, SOBRE ET MINIMAL ======= */
+:root {
+  --green: #1e3a5f;
+  --text: #1f2933;
+  --bg: #f3f6fa;
+  --card: #ffffff;
+  --blue-950: #0f2136;
+  --blue-900: #15324f;
+  --blue-800: #1e3a5f;
+  --blue-700: #2a4f7e;
+  --blue-600: #37659c;
+  --blue-100: #dfe9f4;
+  --blue-050: #f6f9fc;
+  --line: #d2dde8;
+  --shadow-soft: 0 6px 16px rgba(15, 33, 54, 0.08);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--blue-700);
+}
+
+a:hover {
+  color: var(--blue-800);
+}
+
+.site-header,
+.site-header.scrolled {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 10px rgba(15, 33, 54, 0.06);
+}
+
+.nav-menu a {
+  color: var(--blue-900);
+  font-weight: 600;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--blue-700);
+}
+
+.nav-menu a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.lang-switcher-grid .flag {
+  border-color: rgba(30, 58, 95, 0.28);
+}
+
+.vertical-bar {
+  background: var(--blue-800);
+}
+
+.page-title,
+.site-footer,
+.a4-preview-header,
+.wave-transition,
+.tooltip {
+  background: var(--blue-800);
+  color: #fff;
+}
+
+.wave-top,
+.wave-bottom {
+  animation: none;
+}
+
+.profile-pic,
+.map-wrapper,
+.timeline-item,
+.engagement-card,
+.activity-card,
+.sd-desc-side,
+.pdf-container,
+.modal-content,
+.access-modal__content,
+.cv-viewer,
+.reflexion-card,
+.impact-item,
+.preview-section,
+.image-container,
+.projects-container,
+.project-context,
+.project-odd,
+.experience-detail {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.timeline-line,
+.timeline-ingenieur::before {
+  background: var(--blue-700);
+}
+
+.experience-detail::before,
+.experience-detail.left::after,
+.experience-detail.right::after,
+.timeline-item::before {
+  background: var(--blue-700);
+}
+
+.timeline-item::before {
+  box-shadow: 0 0 0 2px #c6d9ec;
+}
+
+.engagement-header h2,
+.project-description h3,
+.intro-ingenieur h2,
+.timeline-item h3,
+.experience-reflexion h2,
+.reflexion-card h3,
+.interview h1,
+.card-title h3,
+.activity-text h3 {
+  color: var(--blue-900);
+}
+
+.engagement-header h2::after {
+  background: var(--blue-700);
+}
+
+.project-description h3,
+.interview h1,
+.projects-container {
+  border-color: var(--blue-700);
+}
+
+.project-context {
+  border-left: 4px solid var(--blue-700);
+}
+
+.professional-engagement::before,
+.engagement-card::before {
+  background: var(--blue-700);
+}
+
+.card-icon,
+.preview-logo-circle,
+.pdf-btn,
+.pdf-btn-download,
+.contact-form .submit-btn,
+.btn,
+#contactForm button {
+  background: var(--blue-700);
+  color: #fff;
+  border: 1px solid var(--blue-700);
+}
+
+.pdf-btn:hover,
+.pdf-btn-download:hover,
+.contact-form .submit-btn:hover,
+.btn:hover,
+#contactForm button:hover {
+  background: var(--blue-800);
+  border-color: var(--blue-800);
+  transform: none;
+  filter: none;
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 1px solid var(--blue-700);
+  color: var(--blue-800);
+}
+
+.btn--ghost:hover {
+  background: var(--blue-050);
+  color: var(--blue-900);
+}
+
+.skill-tag {
+  background: var(--blue-050);
+  color: var(--blue-800);
+  border: 1px solid var(--blue-100);
+}
+
+.skill-tag:hover {
+  background: var(--blue-100);
+  color: var(--blue-900);
+  transform: none;
+}
+
+.projets,
+.experience-reflexion,
+.professional-engagement,
+.sustainable-development,
+.patchwork-item.quote,
+.activities-page,
+.activity-text {
+  background: var(--blue-050);
+}
+
+.activities-page {
+  background: #eef3f8;
+}
+
+.activity-text {
+  background: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea,
+#contactForm input,
+#contactForm textarea,
+.access-modal input {
+  border: 1px solid #c5d4e4;
+  background: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+#contactForm input:focus,
+#contactForm textarea:focus,
+.access-modal input:focus {
+  border-color: var(--blue-700);
+  box-shadow: 0 0 0 3px rgba(42, 79, 126, 0.14);
+  outline: none;
+}
+
+.modal {
+  background-color: rgba(15, 33, 54, 0.58);
+}
+
+.modal .close,
+.access-modal__close {
+  color: var(--blue-900);
+}
+
+.modal .close:hover,
+.access-modal__close:hover {
+  color: var(--blue-700);
+}
+
+.footer-right .last-modified,
+.footer-logo {
+  border-color: rgba(255, 255, 255, 0.48);
+}
+
+.footer-logo,
+.footer-logo:hover,
+#lockIcon,
+#lockIcon:hover,
+.lock-icon:hover,
+.engagement-card:hover,
+.activity-card:hover,
+.profile-pic:hover,
+.reflexion-card:hover,
+.impact-item:hover,
+.card-icon,
+.engagement-card:hover .card-icon {
+  transform: none;
+}
+
+.activity-card,
+.activity-card.in-view {
+  opacity: 1;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.activity-card:hover,
+.reflexion-card:hover,
+.impact-item:hover,
+.engagement-card:hover {
+  box-shadow: 0 10px 20px rgba(15, 33, 54, 0.1);
+}
+
+.sensitive {
+  color: #2f3d4d;
+}
+
